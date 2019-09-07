@@ -1,18 +1,14 @@
 {
   "name": "dustin-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Personal Website for Dustin Williams",
   "main": "app.js",
-  "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --recursive"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Marcus Price",
+  "license": "",
   "dependencies": {
     "chai": "^4.2.0",
     "express": "^4.17.1",
