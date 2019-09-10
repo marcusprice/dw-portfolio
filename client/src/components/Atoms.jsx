@@ -34,6 +34,7 @@ export const ContentAreaContainer = styled.div`
   left: ${props => (props.navMenuExpanded ? '-225px' : '20px') };
   opacity: ${props => (props.navMenuExpanded ? '.25' : '1') };
   transition: all .5s;
+  overflow: auto;
 `
 
 //nav bar
@@ -52,7 +53,6 @@ export const NavigationContainer = styled.ul`
   border: solid 1px #888;
   font-family: 'roboto';
   color: #ddd;
-  grid-template-columns: repeat(2, 1fr);
 `
 
 export const NavItem = styled.li`
@@ -80,6 +80,7 @@ export const LandingMenuContainer = styled.ul`
 `
 
 export const LandingMenuItem = styled.li`
+  font-weight: 700;
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -104,28 +105,61 @@ export const LandingMenuItem = styled.li`
 export const ContentSection = styled.section`
   width: 60%;
   margin: 0 auto;
-  overflow: auto;
   padding: 10px;
 `
-
-export const SectionInfoContainer = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-`
-
 export const SectionTitle = styled.h2`
   font-family: 'roboto';
   font-size: 2em;
   color: #EDF5E1;
 `
 
-export const SectionParagraph = styled.p`
-  font-weight: 500;
+export const SectionInfoContainer = styled.div`
   width: 100%;
-  /* font-family: 'open sans'; */
-  font-family: Helvetica,Arial,Verdana,"Hiragino Kaku Gothic Pro","Hiragino Kaku Gothic Pro W3";
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+`
+
+export const SectionSubTitle = styled.h3`
+  font-family: 'roboto';
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #ddd;
+`
+
+export const SectionParagraph = styled.p`
+  margin-top: 0;
+  font-weight: 500;
+  width: 48%;
+  font-family: 'open sans';
+  /* font-family: Helvetica,Arial,Verdana,"Hiragino Kaku Gothic Pro","Hiragino Kaku Gothic Pro W3"; */
   font-size: 1em;
-  color: #eee;
+  color: #aaa;
   line-height: 1.5;
+`
+
+export const SectionImg = styled.img`
+  width: 48%; height: auto;
+`
+
+export const SectionUl = styled.ul`
+  margin: 0; padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+`
+
+export const SectionLi = styled.li`
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  color: #aaa;
+  height: 80px;
+  font-family: 'open sans';
+  font-weight: 300;
+  font-size: 20px;
+`
+
+export const Checkmark = styled.img`
+  height: 30px; width: auto;
+  margin-right: 10px;
 `

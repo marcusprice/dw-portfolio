@@ -1,23 +1,28 @@
 import React from 'react'
-import { SectionTitle, SectionInfoContainer, SectionParagraph, ContentSection } from './Atoms.jsx'
+import { SectionTitle, SectionSubTitle, SectionInfoContainer, SectionParagraph, ContentSection, SectionImg, SectionUl, SectionLi, Checkmark } from './Atoms.jsx'
+import audioEquipment from '../img/audio-equipment.jpeg'
+import checkmark from '../assets/icons/checkmark.png'
 
 const AudioServices = (props) => {
   return(
     <ContentSection>
       <SectionTitle>AUDIO SERVICES</SectionTitle>
       <SectionInfoContainer>
-        <SectionParagraph>Vestibulum nec volutpat massa, quis euismod sapien. In gravida lorem quis ex pellentesque accumsan id non dolor. Quisque mattis ut ligula et viverra. In euismod elit pharetra mattis dignissim. Nam laoreet, magna sit amet cursus sagittis, massa urna sagittis mauris, eu suscipit nibh est vel libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras lorem urna, pretium a egestas vitae, blandit ut tellus. Etiam lacinia cursus mauris,  non porttitor magna. Fusce ut euismod metus. Etiam vel vestibulum mauris, et gravida sapien. Morbi diam velit, aliquet quis velit consequat, aliquet blandit tortor. Sed posuere pulvinar nibh, at fringilla elit faucibus vel. Nam non faucibus diam. Aenean mollis at ex in dignissim. Aenean elit odio, vulputate sed lectus vel, tristique malesuada dolor. Nam vel sapien quis diam aliquam ultrices.</SectionParagraph>
+        <SectionParagraph>
+          Vestibulum nec volutpat massa, quis euismod sapien. In gravida lorem quis ex pellentesque accumsan id non dolor. Quisque mattis ut ligula et viverra. In euismod elit pharetra mattis dignissim. Nam laoreet, magna sit amet cursus sagittis, massa urna sagittis mauris, eu suscipit nibh est vel libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras lorem urna, pretium a egestas vitae, blandit ut tellus. Etiam lacinia cursus mauris,  non porttitor magna. Fusce ut euismod metus. Etiam vel vestibulum mauris, et gravida sapien. Morbi diam velit, aliquet quis velit consequat, aliquet blandit tortor. Sed posuere pulvinar nibh, at fringilla elit faucibus vel. Nam non faucibus diam. Aenean mollis at ex in dignissim. Aenean elit odio, vulputate sed lectus vel, tristique malesuada dolor. Nam vel sapien quis diam aliquam ultrices.
+        </SectionParagraph>
+        <SectionImg src={audioEquipment} />
       </SectionInfoContainer>
-      <SectionParagraph>The audio services I provide are:</SectionParagraph>
-      <ul>
-        <li>Composition</li>
-        <li>Sound Design</li>
-        <li>Engineering</li>
-        <li>Studio</li>
-        <li>Live</li>
-        <li>Mixing</li>
-        <li>Mastering</li>
-      </ul>
+      <SectionSubTitle>Audio services I provide...</SectionSubTitle>
+      <SectionUl>
+        <SectionLi><Checkmark src={checkmark} alt="checkmark"/>Composition</SectionLi>
+        <SectionLi><Checkmark src={checkmark} alt="checkmark"/>Sound Design</SectionLi>
+        <SectionLi><Checkmark src={checkmark} alt="checkmark"/>Engineering</SectionLi>
+        <SectionLi><Checkmark src={checkmark} alt="checkmark" />Studio</SectionLi>
+        <SectionLi><Checkmark src={checkmark} alt="checkmark" />Live</SectionLi>
+        <SectionLi><Checkmark src={checkmark} alt="checkmark" />Mixing</SectionLi>
+        <SectionLi><Checkmark src={checkmark} alt="checkmark" />Mastering</SectionLi>
+      </SectionUl>
     </ContentSection>
   )
 }
