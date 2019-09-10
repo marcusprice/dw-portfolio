@@ -1,12 +1,13 @@
 import React from 'react'
-import { NavBarContainer, SiteTitle, MenuIcon } from './Atoms'
-import menuIcon from '../assets/icons/menu.png'
+import { NavBarContainer } from './Atoms.jsx'
+import MainNavigation from './MainNavigation.jsx'
+import SecondaryNavigation from './SecondaryNavigation.jsx'
 
 const NavBar = (props) => {
-  return(
-    <NavBarContainer>
-      <SiteTitle>DUSTIN WILLIAMS</SiteTitle>
-      <MenuIcon src={menuIcon} />
+  return (
+    <NavBarContainer navMenuExpanded={props.navMenuExpanded}>
+      <MainNavigation />
+      <SecondaryNavigation />
     </NavBarContainer>
   )
 }
