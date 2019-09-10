@@ -105,18 +105,26 @@ export const ContentSection = styled.section`
   width: 60%;
   margin: 0 auto;
   overflow: auto;
+  padding: 10px;
+`
+
+export const SectionInfoContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 `
 
 export const SectionTitle = styled.h2`
   font-family: 'roboto';
   font-size: 2em;
-  color: #eee;
+  color: #EDF5E1;
 `
 
 export const SectionParagraph = styled.p`
-  font-weight: 300;
+  font-weight: 500;
   width: 100%;
-  font-family: 'open sans';
+  /* font-family: 'open sans'; */
+  font-family: Helvetica,Arial,Verdana,"Hiragino Kaku Gothic Pro","Hiragino Kaku Gothic Pro W3";
   font-size: 1em;
   color: #eee;
   line-height: 1.5;

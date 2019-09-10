@@ -7,15 +7,21 @@ import NavBar from './components/NavBar.jsx'
 
 const App = () => {
   const [navMenuExpanded, setNavMenuExpanded] = useState(false)
+  const [display, setDisplay] = useState('landing menu')
 
   const triggerNavMenu = () => {
     setNavMenuExpanded(!navMenuExpanded)
   }
 
+  const changeDisplay = (newDisplay) => {
+    setDisplay(newDisplay)
+    setNavMenuExpanded(false)
+  }
+
   return (
     <AppContainer>
-      <Header triggerNavMenu={triggerNavMenu} />
-      <ContentArea navMenuExpanded={navMenuExpanded} />
+      <Header changeDisplay={changeDisplay} triggerNavMenu={triggerNavMenu} />
+      <ContentArea navMenuExpanded={navMenuExpanded} display={display} changeDisplay={changeDisplay} />
       <NavBar navMenuExpanded={navMenuExpanded} />
     </AppContainer>
   );
