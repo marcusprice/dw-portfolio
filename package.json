@@ -1,9 +1,13 @@
 {
+  "engines": {
+    "node": "10.16.0"
+  }
   "name": "dustin-portfolio",
   "version": "1.0.0",
   "description": "Personal Website for Dustin Williams",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "mocha --recursive"
   },
   "keywords": [],
