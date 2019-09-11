@@ -163,6 +163,7 @@ export const SectionCard = styled.div`
   background-color: #333;
   border-radius: 15px;
   padding: 20px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 1);  
 `
 
 export const SectionUl = styled.ul`
