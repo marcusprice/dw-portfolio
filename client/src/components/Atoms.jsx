@@ -71,8 +71,8 @@ export const LandingMenuContainer = styled.ul`
   width: 100%; height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 20px;
-  row-gap: 20px;
+  column-gap: 5px;
+  row-gap: 5px;
 
   @media (max-width: 805px) {
     grid-template-columns: repeat(2, 1fr);
@@ -106,6 +106,7 @@ export const ContentSection = styled.section`
   width: 60%;
   margin: 0 auto;
   padding: 10px;
+  border-radius: 5px;
 `
 export const SectionTitle = styled.h2`
   font-family: 'roboto';
@@ -113,14 +114,25 @@ export const SectionTitle = styled.h2`
   color: #EDF5E1;
 `
 
+export const SectionQuote = styled.blockquote`
+  margin: 0; padding: 0;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5em;
+  font-family: 'roboto';
+  color: #ddd;
+  margin-bottom: 40px
+`
+
 export const SectionInfoContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
 `
 
 export const SectionSubTitle = styled.h3`
+  margin: 0;
+  margin-bottom: 20px;
   font-family: 'roboto';
   font-size: 1.5em;
   font-weight: 700;
@@ -138,12 +150,23 @@ export const SectionParagraph = styled.p`
   line-height: 1.5;
 `
 
+export const ImgContainer = styled.div`
+  width: 48%;
+`
+
 export const SectionImg = styled.img`
-  width: 48%; height: auto;
+  width: 100%;
+`
+
+export const SectionCard = styled.div`
+  margin-top: 40px;
+  background-color: #333;
+  border-radius: 15px;
+  padding: 20px;
 `
 
 export const SectionUl = styled.ul`
-  margin: 0; padding: 0;
+  margin: 0; padding: 5px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 `
@@ -153,7 +176,7 @@ export const SectionLi = styled.li`
   align-items: center;
   list-style-type: none;
   color: #aaa;
-  height: 80px;
+  height: 60px;
   font-family: 'open sans';
   font-weight: 300;
   font-size: 20px;

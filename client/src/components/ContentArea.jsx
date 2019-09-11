@@ -2,6 +2,7 @@ import React from 'react'
 import { ContentAreaContainer } from './Atoms.jsx'
 import LandingMenu from './LandingMenu.jsx'
 import AudioServices from './AudioServices.jsx'
+import About from './About.jsx'
 
 const ContentArea = (props) => {
 
@@ -15,6 +16,8 @@ const ContentArea = (props) => {
       case 'audio services':
         output = <AudioServices />
         break
+      case 'about':
+        output = <About />
     }
 
     return output

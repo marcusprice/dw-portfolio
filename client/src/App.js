@@ -22,7 +22,7 @@ const App = () => {
     <AppContainer>
       <Header changeDisplay={changeDisplay} triggerNavMenu={triggerNavMenu} />
       <ContentArea navMenuExpanded={navMenuExpanded} display={display} changeDisplay={changeDisplay} />
-      <NavBar navMenuExpanded={navMenuExpanded} />
+      <NavBar changeDisplay={changeDisplay} navMenuExpanded={navMenuExpanded} />
     </AppContainer>
   );
 }

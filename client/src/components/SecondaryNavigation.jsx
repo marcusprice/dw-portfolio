@@ -5,7 +5,7 @@ const MainNavigation = (props) => {
 
   return(
     <NavigationContainer>
-      <NavItem>SOUNDCLOUD</NavItem>
+      <NavItem><a href="https://soundcloud.com/tarsier-eyes" rel="noopener noreferrer" target="_blank">SOUNDCLOUD</a></NavItem>
       <NavItem>INSTAGRAM</NavItem>
     </NavigationContainer>
   )

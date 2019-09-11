@@ -7,3 +7,12 @@ body {
 #root {
   width: 100%; height: 100%;
 }
+
+a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+a:hover {
+  color: #888;  
+}

@@ -6,7 +6,7 @@ import SecondaryNavigation from './SecondaryNavigation.jsx'
 const NavBar = (props) => {
   return (
     <NavBarContainer navMenuExpanded={props.navMenuExpanded}>
-      <MainNavigation />
+      <MainNavigation changeDisplay={props.changeDisplay} />
       <SecondaryNavigation />
     </NavBarContainer>
   )
