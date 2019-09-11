@@ -9,8 +9,12 @@ const App = () => {
   const [navMenuExpanded, setNavMenuExpanded] = useState(false)
   const [display, setDisplay] = useState('landing menu')
 
-  const triggerNavMenu = () => {
-    setNavMenuExpanded(!navMenuExpanded)
+  const triggerNavMenu = (state) => {
+    if(state !== undefined) {   //if a specific state is set, set the nav to that state
+      setNavMenuExpanded(state)
+    } else {      //otherwise just set it to the opposite state
+      setNavMenuExpanded(!navMenuExpanded)
+    }
   }
 
   const changeDisplay = (newDisplay) => {
@@ -21,7 +25,7 @@ const App = () => {
   return (
     <AppContainer>
       <Header changeDisplay={changeDisplay} triggerNavMenu={triggerNavMenu} />
-      <ContentArea navMenuExpanded={navMenuExpanded} display={display} changeDisplay={changeDisplay} />
+      <ContentArea triggerNavMenu={triggerNavMenu} navMenuExpanded={navMenuExpanded} display={display} changeDisplay={changeDisplay} />
       <NavBar changeDisplay={changeDisplay} navMenuExpanded={navMenuExpanded} />
     </AppContainer>
   );

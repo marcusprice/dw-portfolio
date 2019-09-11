@@ -24,7 +24,7 @@ const ContentArea = (props) => {
   }
 
   return(
-    <ContentAreaContainer navMenuExpanded={props.navMenuExpanded} >
+    <ContentAreaContainer onClick={() => {props.triggerNavMenu(false)}} navMenuExpanded={props.navMenuExpanded} >
       {handleDisplay()}
     </ContentAreaContainer>
   )

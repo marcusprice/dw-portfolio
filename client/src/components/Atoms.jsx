@@ -111,13 +111,12 @@ export const ContentSection = styled.section`
 export const SectionTitle = styled.h2`
   font-family: 'roboto';
   font-size: 2em;
-  color: #EDF5E1;
+  color: #DDD;
 `
 
 export const SectionQuote = styled.blockquote`
   margin: 0; padding: 0;
   font-weight: 400;
-  font-style: italic;
   font-size: 1.5em;
   font-family: 'roboto';
   color: #ddd;
@@ -163,7 +162,7 @@ export const SectionCard = styled.div`
   background-color: #333;
   border-radius: 15px;
   padding: 20px;
-  box-shadow: 6px 6px 10px rgba(0, 0, 0, 1);  
+  /* box-shadow: 2px 6px 10px rgba(0, 0, 0, 1); */
 `
 
 export const SectionUl = styled.ul`
@@ -172,7 +171,21 @@ export const SectionUl = styled.ul`
   grid-template-columns: repeat(3, 1fr);
 `
 
+export const LongUl = styled.ul`
+  margin: 0; padding: 5px;
+`
+
 export const SectionLi = styled.li`
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  color: #aaa;
+  height: 60px;
+  font-family: 'open sans';
+  font-weight: 300;
+  font-size: 20px;
+`
+export const LongLi = styled.li`
   display: flex;
   align-items: center;
   list-style-type: none;
@@ -186,4 +199,9 @@ export const SectionLi = styled.li`
 export const Checkmark = styled.img`
   height: 30px; width: auto;
   margin-right: 10px;
+`
+
+export const Bold = styled.span`
+  font-weight: 700;
+  color: #ddd;
 `
