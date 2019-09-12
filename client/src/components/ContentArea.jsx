@@ -3,6 +3,7 @@ import { ContentAreaContainer } from './Atoms.jsx'
 import LandingMenu from './LandingMenu.jsx'
 import AudioServices from './AudioServices.jsx'
 import About from './About.jsx'
+import PerfectScrollbar from 'react-perfect-scrollbar'
 
 const ContentArea = (props) => {
 
@@ -20,7 +21,15 @@ const ContentArea = (props) => {
         output = <About />
     }
 
-    return output
+    if(props.display === 'landing menu') {    //if the landing page is requested, don't include the scrollbar
+      return output
+    } else {
+      return(                                 //if a content page is requested, include the scrollbar
+        <PerfectScrollbar>
+          {output}
+        </PerfectScrollbar>
+      )
+    }
   }
 
   return(

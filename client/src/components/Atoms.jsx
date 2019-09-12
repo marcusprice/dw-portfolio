@@ -143,7 +143,7 @@ export const SectionParagraph = styled.p`
   font-family: 'open sans';
   /* font-family: Helvetica,Arial,Verdana,"Hiragino Kaku Gothic Pro","Hiragino Kaku Gothic Pro W3"; */
   font-size: 16px;
-  color: #aaa;
+  color: #ccc;
   line-height: 1.5;
   hyphens: auto;
 `
@@ -156,6 +156,25 @@ export const SectionImg = styled.img`
   width: 100%;
 `
 
+export const DualCardContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+`
+
+export const DualSectionCard = styled.div`
+  margin: 0px;
+  margin-top: 32px;
+  background-color: #333;
+  border-radius: 15px;
+  padding: 32px;
+  box-shadow: 0px 4px 6px #111;
+  width: 48%;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+`
+
 export const SectionCard = styled.div`
   margin: 0px;
   margin-top: 32px;
@@ -163,6 +182,10 @@ export const SectionCard = styled.div`
   border-radius: 15px;
   padding: 32px;
   box-shadow: 0px 4px 6px #111;
+  width: 100%;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
 `
 export const SectionSubTitle = styled.h3`
   margin: 0;
@@ -173,13 +196,13 @@ export const SectionSubTitle = styled.h3`
 `
 
 export const SectionUl = styled.ul`
-  margin: 0;
+  margin: 0; padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 `
 
 export const LongUl = styled.ul`
-  margin: 0;
+  margin: 0; padding: 0;
 `
 
 export const SectionLi = styled.li`
@@ -187,20 +210,18 @@ export const SectionLi = styled.li`
   display: flex;
   align-items: center;
   list-style-type: none;
-  color: #aaa;
+  color: #ccc;
   font-family: 'open sans';
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
 `
 export const LongLi = styled.li`
   margin-top: 32px;
-  display: flex;
-  align-items: center;
   list-style-type: none;
-  color: #aaa;
+  color: #ccc;
   font-family: 'open sans';
   font-weight: 300;
-  font-size: 20px;
+  font-size: 16px;
 `
 
 export const Checkmark = styled.img`
@@ -211,4 +232,30 @@ export const Checkmark = styled.img`
 export const Bold = styled.span`
   font-weight: 700;
   color: #ddd;
+`
+
+//form components
+export const ContactForm = styled.form`
+  display: block;
+  margin: 0; padding: 0;
+  margin-top: 32px;
+`
+
+export const FormLabel = styled.span`
+  display: block;
+  font-family: 'roboto';
+  color: #eee;
+  margin-top: 32px;
+`
+
+export const Input = styled.input`
+  display: block;
+  margin: 0; padding: 0;
+  margin-top: 4px;
+`
+
+export const TextArea = styled.textarea`
+  display: block;
+  margin: 0; padding: 0;
+  margin-top: 4px;
 `
