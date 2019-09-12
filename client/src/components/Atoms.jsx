@@ -21,6 +21,10 @@ export const SiteTitle = styled.h1`
   font-family: 'roboto';
   cursor: pointer;
   font-weight: 500;
+
+  :hover {
+    color: #888;
+  }
 `
 export const MenuIcon = styled.img`
   height: 70%;
@@ -71,8 +75,8 @@ export const LandingMenuContainer = styled.ul`
   width: 100%; height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 5px;
-  row-gap: 5px;
+  column-gap: 32px;
+  row-gap: 32px;
 
   @media (max-width: 805px) {
     grid-template-columns: repeat(2, 1fr);
@@ -105,48 +109,44 @@ export const LandingMenuItem = styled.li`
 export const ContentSection = styled.section`
   width: 60%;
   margin: 0 auto;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 8px;
 `
 export const SectionTitle = styled.h2`
+  margin: 0;
+  margin-top: 4px;
   font-family: 'roboto';
-  font-size: 2em;
+  font-weight: 700;
+  font-size: 36px;
   color: #DDD;
 `
 
 export const SectionQuote = styled.blockquote`
-  margin: 0; padding: 0;
-  font-weight: 400;
-  font-size: 1.5em;
+  padding: 0;
+  font-weight: 500;
+  font-size: 24px;
   font-family: 'roboto';
   color: #ddd;
-  margin-bottom: 40px
+  margin: 0px;
+  margin-top: 8px;
 `
 
 export const SectionInfoContainer = styled.div`
+  margin: 0px;
+  margin-top: 32px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 `
-
-export const SectionSubTitle = styled.h3`
-  margin: 0;
-  margin-bottom: 20px;
-  font-family: 'roboto';
-  font-size: 1.5em;
-  font-weight: 700;
-  color: #ddd;
-`
-
 export const SectionParagraph = styled.p`
   margin-top: 0;
   font-weight: 500;
   width: 48%;
   font-family: 'open sans';
   /* font-family: Helvetica,Arial,Verdana,"Hiragino Kaku Gothic Pro","Hiragino Kaku Gothic Pro W3"; */
-  font-size: 1em;
+  font-size: 16px;
   color: #aaa;
   line-height: 1.5;
+  hyphens: auto;
 `
 
 export const ImgContainer = styled.div`
@@ -158,39 +158,47 @@ export const SectionImg = styled.img`
 `
 
 export const SectionCard = styled.div`
-  margin-top: 40px;
+  margin: 0px;
+  margin-top: 32px;
   background-color: #333;
   border-radius: 15px;
-  padding: 20px;
-  /* box-shadow: 2px 6px 10px rgba(0, 0, 0, 1); */
+  padding: 32px;
+  box-shadow: 0px 4px 6px #111;
+`
+export const SectionSubTitle = styled.h3`
+  margin: 0;
+  font-family: 'roboto';
+  font-size: 24px;
+  font-weight: 500;
+  color: #ddd;
 `
 
 export const SectionUl = styled.ul`
-  margin: 0; padding: 5px;
+  margin: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 `
 
 export const LongUl = styled.ul`
-  margin: 0; padding: 5px;
+  margin: 0;
 `
 
 export const SectionLi = styled.li`
+  margin-top: 32px;
   display: flex;
   align-items: center;
   list-style-type: none;
   color: #aaa;
-  height: 60px;
   font-family: 'open sans';
   font-weight: 300;
   font-size: 20px;
 `
 export const LongLi = styled.li`
+  margin-top: 32px;
   display: flex;
   align-items: center;
   list-style-type: none;
   color: #aaa;
-  height: 60px;
   font-family: 'open sans';
   font-weight: 300;
   font-size: 20px;

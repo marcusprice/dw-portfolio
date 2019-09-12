@@ -1,7 +1,7 @@
 {
   "engines": {
     "node": "10.16.0"
-  }
+  },
   "name": "dustin-portfolio",
   "version": "1.0.0",
   "description": "Personal Website for Dustin Williams",
