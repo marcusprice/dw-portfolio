@@ -38,7 +38,6 @@ export const ContentAreaContainer = styled.div`
   left: ${props => (props.navMenuExpanded ? '-225px' : '20px') };
   opacity: ${props => (props.navMenuExpanded ? '.25' : '1') };
   transition: all .5s;
-  overflow: auto;
 `
 
 //nav bar
