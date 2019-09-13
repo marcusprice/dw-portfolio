@@ -6,7 +6,7 @@ export const AppContainer = styled.div`
 `
 
 //Header
-export const HeaderContainer = styled.nav`
+export const HeaderContainer = styled.header`
   width: calc(100% - 40px);
   height: 40px;
   margin: 0 auto;
@@ -129,31 +129,36 @@ export const SectionQuote = styled.blockquote`
   margin-top: 8px;
 `
 
-export const SectionInfoContainer = styled.div`
+export const MarketingContainer = styled.div`
   margin: 0px;
   margin-top: 32px;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `
-export const SectionParagraph = styled.p`
-  margin-top: 0;
-  font-weight: 500;
+
+export const SectionInfoContainer = styled.div`
   width: 48%;
+`
+
+export const SectionParagraph = styled.p`
+  margin: 0;
+  margin-top: 16px;
+  font-weight: 500;
+  width: 100%;
   font-family: 'open sans';
-  /* font-family: Helvetica,Arial,Verdana,"Hiragino Kaku Gothic Pro","Hiragino Kaku Gothic Pro W3"; */
   font-size: 16px;
   color: #ccc;
   line-height: 1.5;
   hyphens: auto;
 `
 
-export const ImgContainer = styled.div`
+export const MarketingImg = styled.div`
   width: 48%;
-`
-
-export const SectionImg = styled.img`
-  width: 100%;
+  border-radius: 50%;
+  background-image: url(${props => props.img});
+  height: 100%;
 `
 
 export const DualCardContainer = styled.div`

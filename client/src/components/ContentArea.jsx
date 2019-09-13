@@ -19,6 +19,8 @@ const ContentArea = (props) => {
         break
       case 'about':
         output = <About />
+        break;
+      default:
     }
 
     if(props.display === 'landing menu') {    //if the landing page is requested, don't include the scrollbar
