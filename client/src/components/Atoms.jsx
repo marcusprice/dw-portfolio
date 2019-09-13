@@ -207,26 +207,29 @@ export const LongUl = styled.ul`
 
 export const SectionLi = styled.li`
   margin-top: 32px;
-  display: flex;
-  align-items: center;
-  list-style-type: none;
   color: #ccc;
   font-family: 'open sans';
   font-weight: 300;
   font-size: 18px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
 `
 export const LongLi = styled.li`
   margin-top: 32px;
-  list-style-type: none;
   color: #ccc;
   font-family: 'open sans';
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
 `
 
 export const Checkmark = styled.img`
   height: 30px; width: auto;
-  margin-right: 10px;
+  margin-right: 15px;
 `
 
 export const Bold = styled.span`
@@ -235,8 +238,24 @@ export const Bold = styled.span`
 `
 
 //form components
+export const FormContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+`
+
+export const FormInfo = styled.div`
+  width: 40%;
+`
+
+export const FormParagraph = styled.p`
+  width: 100%';
+  font-family: 'roboto';
+  color: #eee;
+`
+
 export const ContactForm = styled.form`
-  display: block;
+  width: 58%;
   margin: 0; padding: 0;
   margin-top: 32px;
 `
@@ -245,6 +264,7 @@ export const FormLabel = styled.span`
   display: block;
   font-family: 'roboto';
   color: #eee;
+  font-weight: 300;
   margin-top: 32px;
 `
 

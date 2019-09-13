@@ -1,6 +1,5 @@
 import React from 'react'
 import { SectionTitle, SectionQuote, ContentSection } from './Atoms.jsx'
-import PerfectScrollbar from 'react-perfect-scrollbar'
 import AudioServicesInfo from './AudioServicesInfo.jsx'
 import AudioServicesCards from './AudioServicesCards.jsx'
 import AudioServicesContact from './AudioServicesContact.jsx'
