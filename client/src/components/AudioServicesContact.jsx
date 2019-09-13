@@ -1,5 +1,5 @@
 import React from 'react'
-import { SectionCard, FormContainer, FormInfo, SectionSubTitle, FormParagraph, ContactForm, FormLabel, Input, TextArea } from './Atoms.jsx'
+import { SectionCard, FormContainer, FormInfo, SectionSubTitle, FormParagraph, ContactForm, FormLabel, Input, Submit, TextArea } from './Atoms.jsx'
 
 const AudioServicesContact = (props) => {
   return(
@@ -14,14 +14,15 @@ const AudioServicesContact = (props) => {
         </FormInfo>
 
         <ContactForm>
-          <FormLabel>Name</FormLabel>
-          <Input type="text" />
+          <FormLabel top={true}>Name</FormLabel>
+          <Input top={true} type="text" />
           <FormLabel>Email</FormLabel>
           <Input type="email" />
           <FormLabel>Service</FormLabel>
           <Input type="text" />
           <FormLabel>Message</FormLabel>
           <TextArea />
+          <Submit value="Send Message" type="submit"/>
         </ContactForm>
 
       </FormContainer>

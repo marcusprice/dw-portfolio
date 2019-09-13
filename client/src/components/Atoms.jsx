@@ -74,8 +74,8 @@ export const LandingMenuContainer = styled.ul`
   width: 100%; height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 32px;
-  row-gap: 32px;
+  column-gap: 16px;
+  row-gap: 16px;
 
   @media (max-width: 805px) {
     grid-template-columns: repeat(2, 1fr);
@@ -106,7 +106,7 @@ export const LandingMenuItem = styled.li`
 
 //content areas
 export const ContentSection = styled.section`
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   padding: 8px;
 `
@@ -210,25 +210,24 @@ export const SectionLi = styled.li`
   color: #ccc;
   font-family: 'open sans';
   font-weight: 300;
-  font-size: 18px;
   list-style-type: none;
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 18px;
 `
 export const LongLi = styled.li`
   margin-top: 32px;
   color: #ccc;
   font-family: 'open sans';
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   list-style-type: none;
   display: flex;
   align-items: center;
 `
 
 export const Checkmark = styled.img`
-  height: 30px; width: auto;
+  height: 24px; width: auto;
   margin-right: 15px;
 `
 
@@ -245,19 +244,19 @@ export const FormContainer = styled.div`
 `
 
 export const FormInfo = styled.div`
-  width: 40%;
+  width: 38%;
 `
 
 export const FormParagraph = styled.p`
-  width: 100%';
+  width: 100%;
   font-family: 'roboto';
-  color: #eee;
+  color: #ccc;
+  font-weight: 300;
 `
 
 export const ContactForm = styled.form`
   width: 58%;
   margin: 0; padding: 0;
-  margin-top: 32px;
 `
 
 export const FormLabel = styled.span`
@@ -265,17 +264,50 @@ export const FormLabel = styled.span`
   font-family: 'roboto';
   color: #eee;
   font-weight: 300;
-  margin-top: 32px;
+  margin-top: ${props => (props.top ? '0' : '32px') };
 `
 
 export const Input = styled.input`
+  width: 75%;
   display: block;
   margin: 0; padding: 0;
   margin-top: 4px;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 4px;
+  padding: 16px 8px;
+  border: solid #222 1px;
+  background: #ccc;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+`
+
+export const Submit = styled.input`
+  display: block;
+  margin: 0; padding: 0;
+  margin-top: 32px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 150px;
+  padding: 8px;
+  border: solid #eee 1px;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
 `
 
 export const TextArea = styled.textarea`
   display: block;
   margin: 0; padding: 0;
   margin-top: 4px;
+  width: 100%;
+  height: 150px;
+  padding: 16px 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #ccc;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
 `
