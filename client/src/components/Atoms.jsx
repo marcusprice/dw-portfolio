@@ -49,7 +49,7 @@ export const NavBarContainer = styled.nav`
 `
 
 //main navigation menu
-export const NavigationContainer = styled.ul`
+export const NavList = styled.ul`
   margin: 0; padding: 0;
   width: 100%;
   margin-top: 25%;
@@ -69,7 +69,7 @@ export const NavItem = styled.li`
 `
 
 //landing menu (grid layout)
-export const LandingMenuContainer = styled.ul`
+export const LandingMenuList = styled.ul`
   margin: 0; padding: 0;
   width: 100%; height: 100%;
   display: grid;
@@ -122,25 +122,8 @@ export const ContentSection = styled.section`
     width: 95%;
   }
 `
-export const SectionTitle = styled.h2`
-  margin: 0;
-  margin-top: 4px;
-  font-family: 'roboto';
-  font-weight: 700;
-  font-size: 36px;
-  color: #DDD;
-`
 
-export const SectionQuote = styled.blockquote`
-  padding: 0;
-  font-weight: 500;
-  font-size: 24px;
-  font-family: 'roboto';
-  color: #ddd;
-  margin: 0px;
-  margin-top: 8px;
-`
-
+//marketing container which introduces each section
 export const MarketingContainer = styled.div`
   margin: 0px;
   margin-top: 32px;
@@ -151,11 +134,30 @@ export const MarketingContainer = styled.div`
   margin-bottom: 32px;
 `
 
-export const SectionInfoContainer = styled.div`
+export const MarketingInfoContainer = styled.div`
   width: 48%;
 `
 
-export const SectionParagraph = styled.p`
+export const MarketingTitle = styled.h2`
+  margin: 0;
+  margin-top: 4px;
+  font-family: 'roboto';
+  font-weight: 700;
+  font-size: 36px;
+  color: #DDD;
+`
+
+export const MarketingQuote = styled.blockquote`
+  padding: 0;
+  font-weight: 500;
+  font-size: 24px;
+  font-family: 'roboto';
+  color: #ddd;
+  margin: 0px;
+  margin-top: 8px;
+`
+
+export const MarketingParagraph = styled.p`
   margin: 0;
   margin-top: 16px;
   font-weight: 500;
@@ -167,7 +169,7 @@ export const SectionParagraph = styled.p`
   hyphens: auto;
 `
 
-export const MarketingImgContainer = styled.div`
+export const MarketingImg = styled.div`
   width: 48%;
   padding-top: 48%;
   border-radius: 50%;
@@ -179,13 +181,13 @@ export const MarketingImgContainer = styled.div`
   border: solid 4px #bbb;
 `
 
-export const DualCardContainer = styled.div`
+export const HalfCardContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 `
 
-export const DualSectionCard = styled.div`
+export const HalfCard = styled.div`
   margin: 0px;
   margin-top: 32px;
   background-color: #333;
@@ -198,7 +200,7 @@ export const DualSectionCard = styled.div`
   box-sizing:border-box;
 `
 
-export const SectionCard = styled.div`
+export const FullCard = styled.div`
   margin: 0px;
   margin-top: 32px;
   background-color: #333;
@@ -210,7 +212,7 @@ export const SectionCard = styled.div`
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
 `
-export const SectionSubTitle = styled.h3`
+export const CardTitle = styled.h3`
   margin: 0;
   font-family: 'roboto';
   font-size: 20px;
@@ -218,17 +220,17 @@ export const SectionSubTitle = styled.h3`
   color: #ddd;
 `
 
-export const SectionUl = styled.ul`
+export const HalfCardList = styled.ul`
   margin: 0; padding: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 `
 
-export const LongUl = styled.ul`
+export const FullCardList = styled.ul`
   margin: 0; padding: 0;
 `
 
-export const SectionLi = styled.li`
+export const HalfCardItem = styled.li`
   margin-top: 32px;
   color: #ccc;
   font-family: 'open sans';
@@ -238,7 +240,7 @@ export const SectionLi = styled.li`
   align-items: center;
   font-size: 18px;
 `
-export const LongLi = styled.li`
+export const FullCardItem = styled.li`
   margin-top: 32px;
   color: #ccc;
   font-family: 'open sans';
@@ -249,12 +251,12 @@ export const LongLi = styled.li`
   align-items: center;
 `
 
-export const Checkmark = styled.img`
+export const ListItemIcon = styled.img`
   height: 24px; width: auto;
   margin-right: 15px;
 `
 
-export const Bold = styled.span`
+export const BoldText = styled.span`
   font-weight: 700;
   color: #ddd;
 `
@@ -300,6 +302,8 @@ export const Input = styled.input`
   margin-top: 4px;
   border-radius: 5px;
   font-size: 16px;
+  font-family: 'roboto';
+  font-weight: 300;
   padding: 8px 8px;
   color: #ccc;
   border: solid #555 1px;
@@ -307,6 +311,12 @@ export const Input = styled.input`
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
+
+  :focus {
+    outline: none !important;
+    border-color: #2ECC71;
+    box-shadow: 0 0 5px #2ECC71;
+  }
 `
 
 export const Submit = styled.input`
@@ -333,15 +343,23 @@ export const TextArea = styled.textarea`
   display: block;
   margin: 0; padding: 0;
   margin-top: 4px;
+  font-family: 'roboto';
   width: 100%;
   height: 150px;
   padding: 16px 8px;
   border-radius: 5px;
   font-size: 16px;
+  font-weight: 300;
   background: #222;
   border: solid #555 1px;
   resize: none;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
+
+  :focus {
+    outline: none !important;
+    border-color: #2ECC71;
+    box-shadow: 0 0 5px #2ECC71;
+  }
 `

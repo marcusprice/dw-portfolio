@@ -1,13 +1,13 @@
 import React from 'react'
-import { SectionCard, FormContainer, FormInfo, SectionSubTitle, FormParagraph, ContactForm, FormLabel, Input, Submit, TextArea } from './Atoms.jsx'
+import { FullCard, FormContainer, FormInfo, CardTitle, FormParagraph, ContactForm, FormLabel, Input, Submit, TextArea } from './Atoms.jsx'
 
 const AudioServicesContact = (props) => {
   return(
-    <SectionCard>
+    <FullCard>
       <FormContainer>
 
         <FormInfo>
-          <SectionSubTitle>Get in Touch For a Quote</SectionSubTitle>
+          <CardTitle>Get in Touch For a Quote</CardTitle>
           <FormParagraph>
             Vivamus nisl nibh, viverra vel eleifend eu, viverra eget lorem. Ut ut vulputate massa. Morbi nec purus varius, consectetur sapien et, suscipit erat. Pellentesque rutrum felis lacus, a volutpat lorem cursus ut. Phasellus sed facilisis ante. Vestibulum congue, sem ut consectetur convallis, ipsum massa laoreet leo, et congue orci neque efficitur justo.
           </FormParagraph>
@@ -26,7 +26,7 @@ const AudioServicesContact = (props) => {
         </ContactForm>
 
       </FormContainer>
-    </SectionCard>
+    </FullCard>
   )
 }
 

@@ -1,34 +1,34 @@
 import React from 'react'
-import { DualCardContainer, DualSectionCard, SectionSubTitle, Checkmark, SectionUl, SectionLi, LongUl, LongLi, Bold } from './Atoms.jsx'
+import { HalfCardContainer, HalfCard, CardTitle, ListItemIcon, HalfCardList, HalfCardItem, FullCardList, FullCardItem, BoldText } from './Atoms.jsx'
 import checkmark from '../assets/icons/checkmark.png'
 import speaker from '../assets/icons/speaker.png'
 
 const AudioServicesCards = (props) => {
   return(
-    <DualCardContainer>
-      <DualSectionCard>
-        <SectionSubTitle>Audio Services I Provide</SectionSubTitle>
-        <SectionUl>
-          <SectionLi bullet={checkmark}><Checkmark src={checkmark} />Composition</SectionLi>
-          <SectionLi bullet={checkmark}><Checkmark src={checkmark} />Sound Design</SectionLi>
-          <SectionLi bullet={checkmark}><Checkmark src={checkmark} />Studio Engineering</SectionLi>
-          <SectionLi bullet={checkmark}><Checkmark src={checkmark} />Live Engineering</SectionLi>
-          <SectionLi bullet={checkmark}><Checkmark src={checkmark} />Mixing</SectionLi>
-          <SectionLi bullet={checkmark}><Checkmark src={checkmark} />Mastering</SectionLi>
-        </SectionUl>
-      </DualSectionCard>
+    <HalfCardContainer>
+      <HalfCard>
+        <CardTitle>Audio Services I Provide</CardTitle>
+        <HalfCardList>
+          <HalfCardItem><ListItemIcon src={checkmark} />Composition</HalfCardItem>
+          <HalfCardItem><ListItemIcon src={checkmark} />Sound Design</HalfCardItem>
+          <HalfCardItem><ListItemIcon src={checkmark} />Studio Engineering</HalfCardItem>
+          <HalfCardItem><ListItemIcon src={checkmark} />Live Engineering</HalfCardItem>
+          <HalfCardItem><ListItemIcon src={checkmark} />Mixing</HalfCardItem>
+          <HalfCardItem><ListItemIcon src={checkmark} />Mastering</HalfCardItem>
+        </HalfCardList>
+      </HalfCard>
 
-      <DualSectionCard>
-        <SectionSubTitle>Notable Projects I've Worked On</SectionSubTitle>
-        <LongUl>
-          <LongLi><Checkmark src={speaker} /><div>Dino Delivery - <Bold>Compostion & Sound Design</Bold></div></LongLi>
-          <LongLi><Checkmark src={speaker} /><div>Twin Sibling, Album Name - <Bold>Studio Engineering, Mixing & Mastering</Bold></div></LongLi>
-          <LongLi><Checkmark src={speaker} /><div>Shelf Nunny, Album Name - <Bold>Mastering</Bold></div></LongLi>
-          <LongLi><Checkmark src={speaker} /><div>Marcus Price, Live On Mixlr - <Bold>Mastering</Bold></div></LongLi>
-          <LongLi><Checkmark src={speaker} /><div>Some Live Event, Seattle, WA - <Bold>Live Engineering</Bold></div></LongLi>
-        </LongUl>
-      </DualSectionCard>
-    </DualCardContainer>
+      <HalfCard>
+        <CardTitle>Notable Projects I've Worked On</CardTitle>
+        <FullCardList>
+          <FullCardItem><ListItemIcon src={speaker} /><div>Dino Delivery - <BoldText>Compostion & Sound Design</BoldText></div></FullCardItem>
+          <FullCardItem><ListItemIcon src={speaker} /><div>Twin Sibling, Album Name - <BoldText>Studio Engineering, Mixing & Mastering</BoldText></div></FullCardItem>
+          <FullCardItem><ListItemIcon src={speaker} /><div>Shelf Nunny, Album Name - <BoldText>Mastering</BoldText></div></FullCardItem>
+          <FullCardItem><ListItemIcon src={speaker} /><div>Marcus Price, Live On Mixlr - <BoldText>Mastering</BoldText></div></FullCardItem>
+          <FullCardItem><ListItemIcon src={speaker} /><div>Some Live Event, Seattle, WA - <BoldText>Live Engineering</BoldText></div></FullCardItem>
+        </FullCardList>
+      </HalfCard>
+    </HalfCardContainer>
   )
 }
 
