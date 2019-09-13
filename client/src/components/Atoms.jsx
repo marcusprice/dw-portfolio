@@ -106,9 +106,21 @@ export const LandingMenuItem = styled.li`
 
 //content areas
 export const ContentSection = styled.section`
-  width: 80%;
   margin: 0 auto;
   padding: 8px;
+
+  /*large monitor*/
+  width: 70%;
+
+  /*medium monitor/laptop*/
+  @media (max-width: 1200px) {
+    width: 80%;
+  }
+
+  /*small monitor/laptop*/
+  @media (max-width: 1000px) {
+    width: 95%;
+  }
 `
 export const SectionTitle = styled.h2`
   margin: 0;
@@ -136,6 +148,7 @@ export const MarketingContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 32px;
 `
 
 export const SectionInfoContainer = styled.div`
@@ -154,11 +167,16 @@ export const SectionParagraph = styled.p`
   hyphens: auto;
 `
 
-export const MarketingImg = styled.div`
+export const MarketingImgContainer = styled.div`
   width: 48%;
+  padding-top: 48%;
   border-radius: 50%;
   background-image: url(${props => props.img});
-  height: 100%;
+  background-size: auto 100%;
+  /* background-size: cover; */
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  border: solid 4px #bbb;
 `
 
 export const DualCardContainer = styled.div`
