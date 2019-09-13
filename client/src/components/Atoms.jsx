@@ -166,7 +166,7 @@ export const DualSectionCard = styled.div`
   margin: 0px;
   margin-top: 32px;
   background-color: #333;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 32px;
   box-shadow: 0px 4px 6px #111;
   width: 48%;
@@ -179,7 +179,7 @@ export const SectionCard = styled.div`
   margin: 0px;
   margin-top: 32px;
   background-color: #333;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 32px;
   box-shadow: 0px 4px 6px #111;
   width: 100%;
@@ -190,7 +190,7 @@ export const SectionCard = styled.div`
 export const SectionSubTitle = styled.h3`
   margin: 0;
   font-family: 'roboto';
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   color: #ddd;
 `
@@ -252,6 +252,9 @@ export const FormParagraph = styled.p`
   font-family: 'roboto';
   color: #ccc;
   font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+  margin-top: 16px;
 `
 
 export const ContactForm = styled.form`
@@ -274,10 +277,10 @@ export const Input = styled.input`
   margin-top: 4px;
   border-radius: 5px;
   font-size: 16px;
-  height: 4px;
-  padding: 16px 8px;
-  border: solid #222 1px;
-  background: #ccc;
+  padding: 8px 8px;
+  color: #ccc;
+  border: solid #555 1px;
+  background: #222;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
@@ -286,18 +289,24 @@ export const Input = styled.input`
 export const Submit = styled.input`
   display: block;
   margin: 0; padding: 0;
+  background: #ccc;
+  color: #222;
+  font-family: 'roboto';
+  font-weight: 500;
   margin-top: 32px;
   border-radius: 5px;
   font-size: 16px;
   width: 150px;
   padding: 8px;
-  border: solid #eee 1px;
+  border: solid #666 1px;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
+  cursor: pointer;
 `
 
 export const TextArea = styled.textarea`
+  color: #ccc;
   display: block;
   margin: 0; padding: 0;
   margin-top: 4px;
@@ -306,7 +315,9 @@ export const TextArea = styled.textarea`
   padding: 16px 8px;
   border-radius: 5px;
   font-size: 16px;
-  background: #ccc;
+  background: #222;
+  border: solid #555 1px;
+  resize: none;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
