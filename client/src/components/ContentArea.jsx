@@ -1,6 +1,7 @@
 import React from 'react'
 import { ContentAreaContainer } from './Atoms.jsx'
 import LandingMenu from './LandingMenu.jsx'
+import Music from './Music.jsx'
 import AudioServices from './AudioServices.jsx'
 import About from './About.jsx'
 import PerfectScrollbar from 'react-perfect-scrollbar'
@@ -14,6 +15,9 @@ const ContentArea = (props) => {
       case 'landing menu':
         output = <LandingMenu changeDisplay={props.changeDisplay} />
         break
+      case 'music':
+        output = <Music changeDisplay={props.changeDisplay} />
+        break
       case 'audio services':
         output = <AudioServices />
         break
@@ -21,6 +25,7 @@ const ContentArea = (props) => {
         output = <About />
         break;
       default:
+        break;
     }
 
     if(props.display === 'landing menu') {    //if the landing page is requested, don't include the scrollbar

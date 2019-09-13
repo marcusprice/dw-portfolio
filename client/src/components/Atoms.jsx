@@ -157,7 +157,7 @@ export const MarketingQuote = styled.blockquote`
   margin-top: 8px;
 `
 
-export const MarketingParagraph = styled.p`
+export const Paragraph = styled.p`
   margin: 0;
   margin-top: 16px;
   font-weight: 500;
@@ -218,6 +218,36 @@ export const CardTitle = styled.h3`
   font-size: 20px;
   font-weight: 500;
   color: #ddd;
+`
+
+export const CardSubTitle = styled.h4`
+  margin: 0 auto;
+  margin-top: 64px;
+  font-family: 'roboto';
+  font-size: 18px;
+  font-weight: 500;
+  color: #ddd;
+`
+
+export const MindBeams = styled.iframe`
+  margin: 0;
+  margin-top: 16px;
+  border: 0;
+  width: 350px;
+  height: 470px;
+`
+
+export const TarsierEyes = styled.iframe`
+  margin: 0;
+  margin-top: 16px;
+  width: 40%;
+  height: 300px;
+  display: block;
+`
+
+export const Alien = styled.img`
+  margin: 0;
+  margin-top: 64px;
 `
 
 export const HalfCardList = styled.ul`

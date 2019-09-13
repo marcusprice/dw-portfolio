@@ -10,7 +10,7 @@ import email from '../img/email.jpeg'
 const LandingMenu = (props) => {
   return(
     <LandingMenuList>
-      <LandingMenuItem img={musicCollection} size="auto 100%" position="left center">MUSIC</LandingMenuItem>
+      <LandingMenuItem  onClick={() => {props.changeDisplay('music')}} img={musicCollection} size="auto 100%" position="left center">MUSIC</LandingMenuItem>
       <LandingMenuItem onClick={() => {props.changeDisplay('audio services')}} img={audioEquipment} size="auto 100%">AUDIO SERVICES</LandingMenuItem>
       <LandingMenuItem onClick={() => {props.changeDisplay('about')}} img={dustin} size="100% auto" position="left center">ABOUT</LandingMenuItem>
       <LandingMenuItem img={money} size="100% auto">SUPPORT</LandingMenuItem>
