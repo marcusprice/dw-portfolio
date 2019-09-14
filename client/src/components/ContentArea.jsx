@@ -8,6 +8,7 @@ import PerfectScrollbar from 'react-perfect-scrollbar'
 
 const ContentArea = (props) => {
 
+  //determines what view/page to show
   const handleDisplay = () => {
     let output
 
