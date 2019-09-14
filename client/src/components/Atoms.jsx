@@ -169,6 +169,18 @@ export const Paragraph = styled.p`
   hyphens: auto;
 `
 
+export const SupportingParagraph = styled.p`
+  margin: 0;
+  margin-top: 4px;
+  font-weight: 500;
+  width: 100%;
+  font-family: 'open sans';
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.5;
+  hyphens: auto;
+`
+
 export const MarketingImg = styled.div`
   width: 48%;
   padding-top: 48%;
@@ -283,6 +295,17 @@ export const HalfCardItem = styled.li`
 `
 export const FullCardItem = styled.li`
   margin-top: 32px;
+  color: #ccc;
+  font-family: 'open sans';
+  font-weight: 300;
+  font-size: 16px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+`
+
+export const SmallFullCardItem = styled.li`
+  margin-top: 16px;
   color: #ccc;
   font-family: 'open sans';
   font-weight: 300;
