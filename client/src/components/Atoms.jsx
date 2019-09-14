@@ -113,7 +113,7 @@ export const ContentSection = styled.section`
   width: 70%;
 
   /*medium monitor/laptop*/
-  @media (max-width: 1200px) {
+  @media (max-width: 1300px) {
     width: 80%;
   }
 
@@ -222,7 +222,7 @@ export const CardTitle = styled.h3`
 
 export const CardSubTitle = styled.h4`
   margin: 0 auto;
-  margin-top: 64px;
+  margin-top: 16px;
   font-family: 'roboto';
   font-size: 18px;
   font-weight: 500;
@@ -232,6 +232,7 @@ export const CardSubTitle = styled.h4`
 export const MindBeams = styled.iframe`
   margin: 0;
   margin-top: 16px;
+  margin-bottom: 16px;
   border: 0;
   width: 350px;
   height: 470px;
@@ -240,6 +241,7 @@ export const MindBeams = styled.iframe`
 export const TarsierEyes = styled.iframe`
   margin: 0;
   margin-top: 16px;
+  margin-bottom: 16px;
   width: 40%;
   height: 300px;
   display: block;
@@ -247,7 +249,16 @@ export const TarsierEyes = styled.iframe`
 
 export const Alien = styled.img`
   margin: 0;
-  margin-top: 64px;
+  margin-top: 16px;
+`
+
+export const Stalebirth = styled.iframe`
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border: 0;
+  width: 350px;
+  height: 470px;
 `
 
 export const HalfCardList = styled.ul`
