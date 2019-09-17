@@ -427,3 +427,17 @@ export const TextArea = styled.textarea`
     box-shadow: 0 0 5px #2ECC71;
   }
 `
+
+export const SupportContainer = styled.div`
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 32px;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`
+
+export const SupportItem = styled.img`
+  width: 40%;
+  height: auto;
+`

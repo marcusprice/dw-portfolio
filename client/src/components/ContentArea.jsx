@@ -4,6 +4,7 @@ import LandingMenu from './LandingMenu.jsx'
 import Music from './Music.jsx'
 import AudioServices from './AudioServices.jsx'
 import About from './About.jsx'
+import Support from './Support.jsx'
 import PerfectScrollbar from 'react-perfect-scrollbar'
 
 const ContentArea = (props) => {
@@ -25,6 +26,8 @@ const ContentArea = (props) => {
       case 'about':
         output = <About />
         break;
+      case 'support':
+          output = <Support />
       default:
         break;
     }
