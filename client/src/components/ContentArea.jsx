@@ -5,7 +5,9 @@ import Music from './Music.jsx'
 import AudioServices from './AudioServices.jsx'
 import About from './About.jsx'
 import Support from './Support.jsx'
+import Contact from './Contact.jsx'
 import PerfectScrollbar from 'react-perfect-scrollbar'
+import 'react-perfect-scrollbar/dist/css/styles.css';
 
 const ContentArea = (props) => {
 
@@ -25,11 +27,15 @@ const ContentArea = (props) => {
         break
       case 'about':
         output = <About />
-        break;
+        break
       case 'support':
-          output = <Support />
+        output = <Support />
+        break
+      case 'contact':
+        output = <Contact />
+        break
       default:
-        break;
+        break
     }
 
     if(props.display === 'landing menu') {    //if the landing page is requested, don't include the scrollbar

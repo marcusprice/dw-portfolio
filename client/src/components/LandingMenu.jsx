@@ -15,7 +15,7 @@ const LandingMenu = (props) => {
       <LandingMenuItem onClick={() => {props.changeDisplay('about')}} img={dustin} size="100% auto" position="left center">ABOUT</LandingMenuItem>
       <LandingMenuItem onClick={() => {props.changeDisplay('support')}} img={money} size="100% auto">SUPPORT</LandingMenuItem>
       <LandingMenuItem img={dustinJamming} size="100% auto">SHOWS</LandingMenuItem>
-      <LandingMenuItem img={email} size="100% auto">CONTACT</LandingMenuItem>
+      <LandingMenuItem onClick={() => {props.changeDisplay('contact')}} img={email} size="100% auto">CONTACT</LandingMenuItem>
     </LandingMenuList>
   )
 }

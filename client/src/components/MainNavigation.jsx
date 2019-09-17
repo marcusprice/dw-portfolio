@@ -10,7 +10,7 @@ const MainNavigation = (props) => {
       <NavItem onClick={() => {props.changeDisplay('about')}}>ABOUT</NavItem>
       <NavItem onClick={() => {props.changeDisplay('support')}}>SUPPORT</NavItem>
       <NavItem>SHOWS</NavItem>
-      <NavItem>CONTACT</NavItem>
+      <NavItem onClick={() => {props.changeDisplay('contact')}}>CONTACT</NavItem>
     </NavList>
   )
 }

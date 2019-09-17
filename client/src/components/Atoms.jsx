@@ -187,8 +187,8 @@ export const MarketingImg = styled.div`
   border-radius: 50%;
   background-image: url(${props => props.img});
   background-size: auto 100%;
-  /* background-size: cover; */
-  background-position: center bottom;
+  background-size: cover;
+  /* background-position: center bottom; */
   background-repeat: no-repeat;
   border: solid 4px #bbb;
 `
@@ -431,7 +431,7 @@ export const TextArea = styled.textarea`
 export const SupportContainer = styled.div`
   width: 80%;
   margin: 0 auto;
-  margin-top: 32px;  
+  margin-top: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
