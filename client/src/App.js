@@ -30,7 +30,7 @@ const App = () => {
       <ContentArea triggerNavMenu={triggerNavMenu} navMenuExpanded={navMenuExpanded} display={display} changeDisplay={changeDisplay} />
       <NavBar changeDisplay={changeDisplay} navMenuExpanded={navMenuExpanded} />
     </AppContainer>
-  );
+  )
 }
 
 export default App

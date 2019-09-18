@@ -1,5 +1,5 @@
 import React from 'react'
-import { FullCard, HalfCardContainer, HalfCard, CardTitle, CardSubTitle, Paragraph, SupportingParagraph, FullCardList, FullCardItem, ListItemIcon, SmallFullCardItem } from './Atoms.jsx'
+import { FullCard, HalfCardContainer, HalfCard, CardTitle, CardSubTitle, Paragraph, SupportingParagraph, FullCardList, ListItemIcon, SmallFullCardItem } from './Atoms.jsx'
 import checkmark from '../assets/icons/checkmark.png'
 
 const AboutCards = (props) => {
@@ -21,7 +21,7 @@ const AboutCards = (props) => {
       <HalfCardContainer>
       <HalfCard>
         <CardTitle>Education</CardTitle>
-        <CardSubTitle>Digipen Institute of Technology</CardSubTitle>
+        <CardSubTitle marginTop="8px">Digipen Institute of Technology</CardSubTitle>
         <SupportingParagraph>BA in Degree Name</SupportingParagraph>
         <FullCardList>
           <SmallFullCardItem><ListItemIcon src={checkmark}/>Donec congue leo at orci facilisis, nec pretium lacus dictum.</SmallFullCardItem>
@@ -31,11 +31,11 @@ const AboutCards = (props) => {
       </HalfCard>
       <HalfCard>
         <CardTitle>Work Experience</CardTitle>
-        <CardSubTitle>Digipen Institute of Technology</CardSubTitle>
+        <CardSubTitle marginTop="8px">Digipen Institute of Technology</CardSubTitle>
         <SupportingParagraph>Job Title</SupportingParagraph>
         <SmallFullCardItem><ListItemIcon src={checkmark}/>Donec congue leo at orci facilisis, nec pretium lacus dictum.</SmallFullCardItem>
         <SmallFullCardItem><ListItemIcon src={checkmark}/>Vestibulum sodales, nibh et suscipit tincidunt, nulla mi aliquet magna, vitae vulputate orci metus mollis est. </SmallFullCardItem>
-        <SmallFullCardItem><ListItemIcon src={checkmark}/>Proin sagittis quam odio, sit amet semper libero posuere sit amet.</SmallFullCardItem>            
+        <SmallFullCardItem><ListItemIcon src={checkmark}/>Proin sagittis quam odio, sit amet semper libero posuere sit amet.</SmallFullCardItem>
       </HalfCard>
       </HalfCardContainer>
     </div>

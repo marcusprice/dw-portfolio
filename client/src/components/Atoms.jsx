@@ -56,7 +56,6 @@ export const NavList = styled.ul`
   border: solid 1px #888;
   font-family: 'roboto';
   color: #ddd;
-  padding-bottom: 10px;
 `
 
 export const NavItem = styled.li`
@@ -108,7 +107,7 @@ export const LandingMenuItem = styled.li`
 //content areas
 export const ContentSection = styled.section`
   margin: 0 auto;
-  padding: 8px;
+  padding: 0 8px 32px 8px;
 
   /*large monitor*/
   width: 70%;
@@ -172,6 +171,7 @@ export const Paragraph = styled.p`
 
 export const SupportingParagraph = styled.p`
   margin: 0;
+  margin-top: 8px;
   margin-bottom: 16px;
   font-weight: 500;
   width: 100%;
@@ -227,6 +227,7 @@ export const FullCard = styled.div`
 `
 export const CardTitle = styled.h3`
   margin: 0;
+  margin-bottom: 8px;
   font-family: 'roboto';
   font-size: 20px;
   font-weight: 500;
@@ -234,8 +235,8 @@ export const CardTitle = styled.h3`
 `
 
 export const CardSubTitle = styled.h4`
-  margin: 0 auto;
-  margin-top: 16px;
+  margin: 0;
+  margin-top: ${props => props.marginTop};
   font-family: 'roboto';
   font-size: 18px;
   font-weight: 500;
@@ -245,7 +246,7 @@ export const CardSubTitle = styled.h4`
 export const MindBeams = styled.iframe`
   margin: 0;
   margin-top: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
   border: 0;
   width: 350px;
   height: 470px;
@@ -254,7 +255,7 @@ export const MindBeams = styled.iframe`
 export const TarsierEyes = styled.iframe`
   margin: 0;
   margin-top: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
   width: 40%;
   height: 300px;
   display: block;
@@ -268,7 +269,7 @@ export const Alien = styled.img`
 export const Stalebirth = styled.iframe`
   margin: 0;
   margin-top: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
   border: 0;
   width: 350px;
   height: 470px;

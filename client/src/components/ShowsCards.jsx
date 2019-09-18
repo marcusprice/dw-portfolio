@@ -9,13 +9,13 @@ const ShowsCards = (props) => {
     <div>
       <FullCard>
         <CardTitle>Upcoming Shows</CardTitle>
-        <CardSubTitle>Floral Tattoo/ Bad Time Friend / Tarsier Eyes / Sour Girl</CardSubTitle>
+        <CardSubTitle marginTop="8px">Floral Tattoo/ Bad Time Friend / Tarsier Eyes / Sour Girl</CardSubTitle>
         <ShowFlier src={showPoster1}/>
         <SupportingParagraph>
           Nulla et pulvinar quam. Curabitur sapien turpis, ultricies nec sapien et, pharetra laoreet tellus. Fusce a maximus dui. Phasellus consequat rutrum velit, nec eleifend neque viverra et. Proin elit magna, vulputate pretium justo vitae, scelerisque cursus erat. Aliquam leo metus, commodo in semper eu, egestas quis mauris.
         </SupportingParagraph>
 
-        <CardSubTitle>Tarsier Eyes/ F.T.P. / Zach Zinn / Bombthreat 23</CardSubTitle>
+        <CardSubTitle marginTop="32px">Tarsier Eyes/ F.T.P. / Zach Zinn / Bombthreat 23</CardSubTitle>
         <ShowFlier src={showPoster2}/>
         <SupportingParagraph>
           Nulla et pulvinar quam. Curabitur sapien turpis, ultricies nec sapien et, pharetra laoreet tellus. Fusce a maximus dui. Phasellus consequat rutrum velit, nec eleifend neque viverra et. Proin elit magna, vulputate pretium justo vitae, scelerisque cursus erat. Aliquam leo metus, commodo in semper eu, egestas quis mauris.
@@ -24,7 +24,7 @@ const ShowsCards = (props) => {
 
       <FullCard>
         <CardTitle>Past Shows</CardTitle>
-        <CardSubTitle>Nacion de Humo/ Goodnight Wounds / Qry / Tarsier Eyes</CardSubTitle>
+        <CardSubTitle marginTop="8px">Nacion de Humo/ Goodnight Wounds / Qry / Tarsier Eyes</CardSubTitle>
         <ShowFlier src={showPoster3}/>
         <SupportingParagraph>
           Nulla et pulvinar quam. Curabitur sapien turpis, ultricies nec sapien et, pharetra laoreet tellus. Fusce a maximus dui. Phasellus consequat rutrum velit, nec eleifend neque viverra et. Proin elit magna, vulputate pretium justo vitae, scelerisque cursus erat. Aliquam leo metus, commodo in semper eu, egestas quis mauris.
