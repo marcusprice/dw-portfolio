@@ -25,10 +25,18 @@ export const SiteTitle = styled.h1`
   :hover {
     color: #888;
   }
+
+  @media (max-width: 425px) {
+    font-size: 24px;
+  }
 `
 export const MenuIcon = styled.img`
   height: 70%;
   cursor: pointer;
+
+  @media (max-width: 425px) {
+    height: 60%;
+  }
 `
 //content area
 export const ContentAreaContainer = styled.div`
@@ -76,9 +84,15 @@ export const LandingMenuList = styled.ul`
   grid-template-columns: repeat(3, 1fr);
   column-gap: 16px;
   row-gap: 16px;
+  overflow: auto;
 
-  @media (max-width: 805px) {
+  @media (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 425px) {
+    grid-template-columns: repeat(1, 1fr);
+    display: block;
   }
 `
 
@@ -88,10 +102,9 @@ export const LandingMenuItem = styled.li`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-position: ${props => props.position};
-  background-size: ${props => props.size};
-  background-repeat: no-repeat;
+  background-size: cover;
   background-image: url(${props => props.img});
+  background-position: center center;
   font-family: 'roboto';
   color: #eee;
   font-size: 2em;
@@ -101,6 +114,12 @@ export const LandingMenuItem = styled.li`
 
   :hover {
     opacity: .6;
+  }
+
+  @media (max-width: 425px) {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 16px;
   }
 `
 
@@ -132,10 +151,18 @@ export const MarketingContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 32px;
+
+  @media (max-width: 425px) {
+    display: block;
+  }
 `
 
 export const MarketingInfoContainer = styled.div`
   width: 48%;
+
+  @media (max-width: 425px) {
+    width: 100%;    
+  }
 `
 
 export const MarketingTitle = styled.h2`
@@ -187,7 +214,7 @@ export const MarketingImg = styled.div`
   padding-top: 48%;
   border-radius: 50%;
   background-image: url(${props => props.img});
-  background-size: auto 100%;
+  /* background-size: auto 100%; */
   background-size: cover;
   /* background-position: center bottom; */
   background-repeat: no-repeat;
