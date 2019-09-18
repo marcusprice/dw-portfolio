@@ -5,6 +5,7 @@ import Music from './Music.jsx'
 import AudioServices from './AudioServices.jsx'
 import About from './About.jsx'
 import Support from './Support.jsx'
+import Shows from './Shows.jsx'
 import Contact from './Contact.jsx'
 import PerfectScrollbar from 'react-perfect-scrollbar'
 import 'react-perfect-scrollbar/dist/css/styles.css';
@@ -20,7 +21,7 @@ const ContentArea = (props) => {
         output = <LandingMenu changeDisplay={props.changeDisplay} />
         break
       case 'music':
-        output = <Music changeDisplay={props.changeDisplay} />
+        output = <Music />
         break
       case 'audio services':
         output = <AudioServices />
@@ -30,6 +31,9 @@ const ContentArea = (props) => {
         break
       case 'support':
         output = <Support />
+        break
+      case 'shows':
+        output = <Shows />
         break
       case 'contact':
         output = <Contact />

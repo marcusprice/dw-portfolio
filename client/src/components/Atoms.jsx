@@ -32,7 +32,7 @@ export const MenuIcon = styled.img`
 `
 //content area
 export const ContentAreaContainer = styled.div`
-  width: calc(100% - 40px); height: calc(100% - 50px);
+  width: calc(100% - 40px); height: calc(100% - 40px);
   margin: 0 auto;
   position: fixed;
   left: ${props => (props.navMenuExpanded ? '-225px' : '20px') };
@@ -56,6 +56,7 @@ export const NavList = styled.ul`
   border: solid 1px #888;
   font-family: 'roboto';
   color: #ddd;
+  padding-bottom: 10px;
 `
 
 export const NavItem = styled.li`
@@ -171,7 +172,7 @@ export const Paragraph = styled.p`
 
 export const SupportingParagraph = styled.p`
   margin: 0;
-  margin-top: 4px;
+  margin-bottom: 16px;
   font-weight: 500;
   width: 100%;
   font-family: 'open sans';
@@ -440,4 +441,12 @@ export const SupportContainer = styled.div`
 export const SupportItem = styled.img`
   width: 40%;
   height: auto;
+`
+
+export const ShowFlier = styled.img`
+  width: 350px;
+  height: auto;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 8px;
 `

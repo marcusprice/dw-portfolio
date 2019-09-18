@@ -9,7 +9,7 @@ const MainNavigation = (props) => {
       <NavItem onClick={() => {props.changeDisplay('audio services')}}>AUDIO SERVICES</NavItem>
       <NavItem onClick={() => {props.changeDisplay('about')}}>ABOUT</NavItem>
       <NavItem onClick={() => {props.changeDisplay('support')}}>SUPPORT</NavItem>
-      <NavItem>SHOWS</NavItem>
+      <NavItem onClick={() => {props.changeDisplay('shows')}}>SHOWS</NavItem>
       <NavItem onClick={() => {props.changeDisplay('contact')}}>CONTACT</NavItem>
     </NavList>
   )
