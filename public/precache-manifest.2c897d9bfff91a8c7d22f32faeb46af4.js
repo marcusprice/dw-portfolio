@@ -1,19 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dee01c9817f33a8a56b972a2beae32f1",
+    "revision": "ae01831b862b0776049a5f08f0bef748",
     "url": "/index.html"
   },
   {
-    "revision": "e59739aa3a9ad7d47161",
-    "url": "/static/css/main.fafbacb0.chunk.css"
+    "revision": "1f8b5238803742dd8439",
+    "url": "/static/css/2.fa4a79a6.chunk.css"
   },
   {
-    "revision": "216f8b3748d0adbe4d57",
-    "url": "/static/js/2.b847dab2.chunk.js"
+    "revision": "61623e352e71b26add43",
+    "url": "/static/css/main.b90ec791.chunk.css"
   },
   {
-    "revision": "e59739aa3a9ad7d47161",
-    "url": "/static/js/main.d9fb10d9.chunk.js"
+    "revision": "1f8b5238803742dd8439",
+    "url": "/static/js/2.f43730c1.chunk.js"
+  },
+  {
+    "revision": "61623e352e71b26add43",
+    "url": "/static/js/main.562e337d.chunk.js"
   },
   {
     "revision": "df35b418445d95524673",
@@ -22,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "94a7e52f4a069f7ce108aba7cbd876f3",
     "url": "/static/media/audio-equipment.94a7e52f.jpeg"
+  },
+  {
+    "revision": "e6c869d6f66ada4b058c89d0ff72de4a",
+    "url": "/static/media/audio-equipment.e6c869d6.jpg"
   },
   {
     "revision": "07bfe897cd75a51f2481e52aec9c5fa8",
@@ -42,5 +50,17 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "aaaf68a1a84650a1ecf370052dea00a2",
     "url": "/static/media/music-collection.aaaf68a1.jpeg"
+  },
+  {
+    "revision": "c0149dbdadd1fe58ca2df5a7fe4249f3",
+    "url": "/static/media/showposter1.c0149dbd.jpg"
+  },
+  {
+    "revision": "44993cd5536ae9ab4e7c848468bda97a",
+    "url": "/static/media/showposter2.44993cd5.jpg"
+  },
+  {
+    "revision": "bcac33fc01bbe69aaa2fe50aabc5bf96",
+    "url": "/static/media/showposter3.bcac33fc.jpg"
   }
 ]);

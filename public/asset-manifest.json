@@ -1,21 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.fafbacb0.chunk.css",
-    "main.js": "/static/js/main.d9fb10d9.chunk.js",
-    "main.js.map": "/static/js/main.d9fb10d9.chunk.js.map",
+    "main.css": "/static/css/main.b90ec791.chunk.css",
+    "main.js": "/static/js/main.562e337d.chunk.js",
+    "main.js.map": "/static/js/main.562e337d.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.488beccc.js",
     "runtime~main.js.map": "/static/js/runtime~main.488beccc.js.map",
-    "static/js/2.b847dab2.chunk.js": "/static/js/2.b847dab2.chunk.js",
-    "static/js/2.b847dab2.chunk.js.map": "/static/js/2.b847dab2.chunk.js.map",
+    "static/css/2.fa4a79a6.chunk.css": "/static/css/2.fa4a79a6.chunk.css",
+    "static/js/2.f43730c1.chunk.js": "/static/js/2.f43730c1.chunk.js",
+    "static/js/2.f43730c1.chunk.js.map": "/static/js/2.f43730c1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.eb679540fc4c8fa24bd2a242077726bd.js": "/precache-manifest.eb679540fc4c8fa24bd2a242077726bd.js",
+    "precache-manifest.2c897d9bfff91a8c7d22f32faeb46af4.js": "/precache-manifest.2c897d9bfff91a8c7d22f32faeb46af4.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.fafbacb0.chunk.css.map": "/static/css/main.fafbacb0.chunk.css.map",
+    "static/css/2.fa4a79a6.chunk.css.map": "/static/css/2.fa4a79a6.chunk.css.map",
+    "static/css/main.b90ec791.chunk.css.map": "/static/css/main.b90ec791.chunk.css.map",
     "static/media/audio-equipment.jpeg": "/static/media/audio-equipment.94a7e52f.jpeg",
+    "static/media/audio-equipment.jpg": "/static/media/audio-equipment.e6c869d6.jpg",
     "static/media/dustin-jamming.jpg": "/static/media/dustin-jamming.07bfe897.jpg",
     "static/media/dustin.jpg": "/static/media/dustin.f271a8d7.jpg",
     "static/media/email.jpeg": "/static/media/email.587e12ae.jpeg",
     "static/media/money.jpeg": "/static/media/money.7497264e.jpeg",
-    "static/media/music-collection.jpeg": "/static/media/music-collection.aaaf68a1.jpeg"
+    "static/media/music-collection.jpeg": "/static/media/music-collection.aaaf68a1.jpeg",
+    "static/media/showposter1.jpg": "/static/media/showposter1.c0149dbd.jpg",
+    "static/media/showposter2.jpg": "/static/media/showposter2.44993cd5.jpg",
+    "static/media/showposter3.jpg": "/static/media/showposter3.bcac33fc.jpg"
   }
 }
