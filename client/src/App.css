@@ -3,9 +3,8 @@ html {
 }
 
 body {
-  width: 100vw;
-  min-height: 100vh;
-  min-height: -webkit-fill-available; /*ios fix*/
+  width: 100vw; height: 100vh;
+  overflow: hidden;
   background-color: #222;
   margin: 0; padding: 0;
 }
