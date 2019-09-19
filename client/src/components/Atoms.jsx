@@ -50,6 +50,9 @@ export const ContentAreaContainer = styled.div`
   left: ${props => (props.navMenuExpanded ? '-225px' : '20px') };
   opacity: ${props => (props.navMenuExpanded ? '.25' : '1') };
   transition: all .5s;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
 
   @media (max-width: 425px) {
     width: calc(100% - 20px);
@@ -136,6 +139,9 @@ export const LandingMenuItem = styled.li`
 export const ContentSection = styled.section`
   margin: 0 auto;
   padding: 0 8px 32px 8px;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
 
   /*large monitor*/
   width: 70%;
