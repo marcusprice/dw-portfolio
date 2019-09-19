@@ -5,6 +5,8 @@ import audioEquipment from '../img/audio-equipment.jpg'
 const AudioServicesInfo = (props) => {
   return(
     <MarketingContainer>
+      <MarketingImg img={audioEquipment} />
+
       <MarketingInfoContainer>
         <MarketingTitle>AUDIO SERVICES</MarketingTitle>
         <MarketingQuote>Morbi diam velit, aliquet blandit tortor.</MarketingQuote>
@@ -13,7 +15,6 @@ const AudioServicesInfo = (props) => {
         </Paragraph>
       </MarketingInfoContainer>
 
-      <MarketingImg img={audioEquipment} />
     </MarketingContainer>
   )
 }

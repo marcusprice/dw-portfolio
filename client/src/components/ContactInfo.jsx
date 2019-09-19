@@ -5,6 +5,8 @@ import email from '../img/email.jpeg'
 const ContactInfo = (props) => {
   return(
     <MarketingContainer>
+      <MarketingImg img={email} />
+
       <MarketingInfoContainer>
         <MarketingTitle>CONTACT</MarketingTitle>
         <MarketingQuote>Morbi diam velit, aliquet blandit tortor.</MarketingQuote>
@@ -13,7 +15,6 @@ const ContactInfo = (props) => {
         </Paragraph>
       </MarketingInfoContainer>
 
-      <MarketingImg img={email} />
     </MarketingContainer>
   )
 }

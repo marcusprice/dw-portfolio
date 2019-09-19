@@ -13,6 +13,10 @@ export const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 425px) {
+    width: calc(100% - 20px)
+  }
 `
 export const SiteTitle = styled.h1`
   margin: 0; padding: 0;
@@ -46,13 +50,18 @@ export const ContentAreaContainer = styled.div`
   left: ${props => (props.navMenuExpanded ? '-225px' : '20px') };
   opacity: ${props => (props.navMenuExpanded ? '.25' : '1') };
   transition: all .5s;
+
+  @media (max-width: 425px) {
+    width: calc(100% - 20px);
+    left: ${props => (props.navMenuExpanded ? '-225px' : '10px') };
+  }
 `
 
 //nav bar
 export const NavBarContainer = styled.nav`
   width: 225px; height: 400px;
   position: fixed;
-  right: ${props => (props.navMenuExpanded ? '20px' : '-227px') };
+  right: ${props => (props.navMenuExpanded ? '10px' : '-227px') };
   transition: all .5s;
 `
 
@@ -140,6 +149,12 @@ export const ContentSection = styled.section`
   @media (max-width: 1000px) {
     width: 95%;
   }
+
+  /*small monitor/laptop*/
+  @media (max-width: 425px) {
+    width: 98%;
+    padding: 0 0px 32px 0px;
+  }
 `
 
 //marketing container which introduces each section
@@ -154,14 +169,16 @@ export const MarketingContainer = styled.div`
 
   @media (max-width: 425px) {
     display: block;
+    margin-top: 8px;
   }
 `
 
 export const MarketingInfoContainer = styled.div`
   width: 48%;
+  order: 1;
 
   @media (max-width: 425px) {
-    width: 100%;    
+    width: 100%;
   }
 `
 
@@ -172,6 +189,11 @@ export const MarketingTitle = styled.h2`
   font-weight: 700;
   font-size: 36px;
   color: #DDD;
+
+  @media (max-width: 425px) {
+    margin-top: 16px;
+    font-size: 30px;
+  }
 `
 
 export const MarketingQuote = styled.blockquote`
@@ -194,6 +216,10 @@ export const Paragraph = styled.p`
   color: #ccc;
   line-height: 1.5;
   hyphens: auto;
+
+  @media (max-width: 425px) {
+    margin-top: 8px;
+  }
 `
 
 export const SupportingParagraph = styled.p`
@@ -219,12 +245,25 @@ export const MarketingImg = styled.div`
   /* background-position: center bottom; */
   background-repeat: no-repeat;
   border: solid 4px #bbb;
+  order: 2;
+
+  @media (max-width: 425px) {
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 90%;
+    margin-bottom: 8px;
+  }
 `
 
 export const HalfCardContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
+  @media (max-width: 425px) {
+    display: block;
+    width: 100%;
+  }
 `
 
 export const HalfCard = styled.div`
@@ -238,6 +277,11 @@ export const HalfCard = styled.div`
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
+
+  @media (max-width: 425px) {
+    width: 100%;
+    display: block;
+    padding: 16px 8px;
 `
 
 export const FullCard = styled.div`
@@ -251,6 +295,10 @@ export const FullCard = styled.div`
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
+
+  @media (max-width: 425px) {
+    padding: 16px 8px;
+  }
 `
 export const CardTitle = styled.h3`
   margin: 0;
@@ -277,6 +325,11 @@ export const MindBeams = styled.iframe`
   border: 0;
   width: 350px;
   height: 470px;
+
+  @media (max-width: 425px) {
+    width: 98%;
+    margin: 0 auto;
+  }
 `
 
 export const TarsierEyes = styled.iframe`
@@ -286,6 +339,11 @@ export const TarsierEyes = styled.iframe`
   width: 40%;
   height: 300px;
   display: block;
+
+  @media (max-width: 425px) {
+    width: 98%;
+    margin: 0 auto;
+  }
 `
 
 export const Alien = styled.img`
@@ -300,6 +358,11 @@ export const Stalebirth = styled.iframe`
   border: 0;
   width: 350px;
   height: 470px;
+
+  @media (max-width: 425px) {
+    width: 98%;
+    margin: 0 auto;
+  }
 `
 
 export const HalfCardList = styled.ul`

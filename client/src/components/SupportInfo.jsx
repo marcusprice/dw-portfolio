@@ -5,6 +5,8 @@ import money from '../img/money.jpeg'
 const SupportInfo = (props) => {
   return(
     <MarketingContainer>
+      <MarketingImg img={money} />
+
       <MarketingInfoContainer>
         <MarketingTitle>SUPPORT</MarketingTitle>
         <MarketingQuote>Morbi diam velit, aliquet blandit tortor.</MarketingQuote>
@@ -13,7 +15,6 @@ const SupportInfo = (props) => {
         </Paragraph>
       </MarketingInfoContainer>
 
-      <MarketingImg img={money} />
     </MarketingContainer>
   )
 }
