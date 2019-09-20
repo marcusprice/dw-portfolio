@@ -428,10 +428,19 @@ export const FormContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 425px) {
+    display: block;
+  }
 `
 
 export const FormInfo = styled.div`
   width: 38%;
+
+  @media (max-width: 425px) {
+    width: 100%;
+    margin-bottom: 16px;
+  }
 `
 
 export const FormParagraph = styled.p`
@@ -447,6 +456,10 @@ export const FormParagraph = styled.p`
 export const ContactForm = styled.form`
   width: 58%;
   margin: 0; padding: 0;
+
+  @media (max-width: 425px) {
+    width: 100%;
+  }
 `
 
 export const FormLabel = styled.span`
@@ -479,6 +492,10 @@ export const Input = styled.input`
     border-color: #2ECC71;
     box-shadow: 0 0 5px #2ECC71;
   }
+
+  @media (max-width: 425px) {
+    width: 100%;
+  }
 `
 
 export const Submit = styled.input`
@@ -498,6 +515,10 @@ export const Submit = styled.input`
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
   cursor: pointer;
+
+  @media (max-width: 425px) {
+    width: 100%;
+  }
 `
 
 export const TextArea = styled.textarea`
@@ -546,4 +567,8 @@ export const ShowFlier = styled.img`
   margin: 0;
   margin-top: 16px;
   margin-bottom: 8px;
+
+  @media (max-width: 425px) {
+    width: 100%;
+  }
 `
