@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { ContentAreaContainer } from './Atoms.jsx'
 import LandingMenu from './LandingMenu.jsx'
 import Music from './Music.jsx'
@@ -7,11 +7,13 @@ import About from './About.jsx'
 import Support from './Support.jsx'
 import Shows from './Shows.jsx'
 import Contact from './Contact.jsx'
-import PerfectScrollbar from 'react-perfect-scrollbar'
-import 'react-perfect-scrollbar/dist/css/styles.css';
 
 const ContentArea = (props) => {
-
+  //to handle scroll-to-top
+  const contentAreaRef = useRef(null)
+  useEffect(() => {
+    contentAreaRef.current.scrollTo(0, 0)
+  }, [props.display])
   //determines what view/page to show
   const handleDisplay = () => {
     let output
@@ -42,19 +44,13 @@ const ContentArea = (props) => {
         break
     }
 
-    if(props.display === 'landing menu') {    //if the landing page is requested, don't include the scrollbar
-      return output
-    } else {
-      return(                                 //if a content page is requested, include the scrollbar
-        <PerfectScrollbar>
-          {output}
-        </PerfectScrollbar>
-      )
-    }
+    return output
   }
 
+
+
   return(
-    <ContentAreaContainer onClick={() => {props.triggerNavMenu(false)}} navMenuExpanded={props.navMenuExpanded} >
+    <ContentAreaContainer ref={contentAreaRef} onClick={() => {props.triggerNavMenu(false)}} navMenuExpanded={props.navMenuExpanded} >
       {handleDisplay()}
     </ContentAreaContainer>
   )

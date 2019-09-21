@@ -3,7 +3,6 @@ import styled from 'styled-components'
 //app
 export const AppContainer = styled.div`
   height: 100%; width: 100%;
-  overflow: hidden;  
 `
 
 //Header
@@ -27,8 +26,10 @@ export const SiteTitle = styled.h1`
   cursor: pointer;
   font-weight: 500;
 
-  :hover {
-    color: #888;
+  @media (min-width: 700px) {
+    :hover {
+      color: #888;
+    }
   }
 
   @media (max-width: 425px) {
@@ -54,6 +55,7 @@ export const ContentAreaContainer = styled.div`
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
+  overflow: auto;
 
   @media (max-width: 425px) {
     width: calc(100% - 20px);
@@ -97,7 +99,6 @@ export const LandingMenuList = styled.ul`
   grid-template-columns: repeat(3, 1fr);
   column-gap: 16px;
   row-gap: 16px;
-  overflow: auto;
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
