@@ -26,7 +26,7 @@ export const SiteTitle = styled.h1`
   cursor: pointer;
   font-weight: 500;
 
-  @media (min-width: 700px) {
+  @media (min-width: 800px) {
     :hover {
       color: #888;
     }
@@ -130,9 +130,12 @@ export const LandingMenuItem = styled.li`
     opacity: .6;
   }
 
+  @media (min-height: 640px) {
+    min-height: 300px;
+  }
+
   @media (max-width: 425px) {
     width: 100%;
-    height: 300px;
     margin-bottom: 16px;
   }
 `
@@ -250,7 +253,7 @@ export const MarketingImg = styled.div`
   background-image: url(${props => props.img});
   /* background-size: auto 100%; */
   background-size: cover;
-  /* background-position: center bottom; */
+  background-position: center center;
   background-repeat: no-repeat;
   border: solid 4px #bbb;
   order: 2;
