@@ -13,6 +13,9 @@ export const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
 
   @media (max-width: 425px) {
     width: calc(100% - 20px)
@@ -49,13 +52,16 @@ export const ContentAreaContainer = styled.div`
   width: calc(100% - 40px); height: calc(100% - 40px);
   margin: 0 auto;
   position: fixed;
+  bottom: 0;
   left: ${props => (props.navMenuExpanded ? '-225px' : '20px') };
   opacity: ${props => (props.navMenuExpanded ? '.25' : '1') };
   transition: all .5s;
+  -webkit-transition: all .5s;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
 
   @media (max-width: 425px) {
     width: calc(100% - 20px);
@@ -69,6 +75,7 @@ export const NavBarContainer = styled.nav`
   position: fixed;
   right: ${props => (props.navMenuExpanded ? '10px' : '-227px') };
   transition: all .5s;
+  -webkit-transition: all .5s;
 `
 
 //main navigation menu
@@ -79,6 +86,10 @@ export const NavList = styled.ul`
   border: solid 1px #888;
   font-family: 'roboto';
   color: #ddd;
+
+  @media (max-height: 475px) {
+    margin-top: 8px;
+  }
 `
 
 export const NavItem = styled.li`
@@ -88,6 +99,10 @@ export const NavItem = styled.li`
 
   :hover {
     color: #888;
+  }
+
+  @media (max-height: 475px) {
+    padding: 4px;
   }
 `
 
@@ -100,7 +115,7 @@ export const LandingMenuList = styled.ul`
   column-gap: 16px;
   row-gap: 16px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 812px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -126,17 +141,21 @@ export const LandingMenuItem = styled.li`
   cursor: pointer;
   transition: opacity .1s;
 
+  @media (max-height: 425px) {
+    min-height: 300px;
+  }
+
+  @media (orientation:portrait) {
+    min-height: 300px;
+  }
+
   :hover {
     opacity: .6;
   }
 
-  @media (min-height: 640px) {
-    min-height: 300px;
-  }
-
   @media (max-width: 425px) {
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
 `
 
@@ -178,7 +197,7 @@ export const MarketingContainer = styled.div`
   align-items: center;
   margin-bottom: 32px;
 
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     display: block;
     margin-top: 8px;
   }
@@ -188,7 +207,7 @@ export const MarketingInfoContainer = styled.div`
   width: 48%;
   order: 1;
 
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     width: 100%;
   }
 `
@@ -201,7 +220,7 @@ export const MarketingTitle = styled.h2`
   font-size: 36px;
   color: #DDD;
 
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     margin-top: 16px;
     font-size: 30px;
   }
@@ -228,7 +247,7 @@ export const Paragraph = styled.p`
   line-height: 1.5;
   hyphens: auto;
 
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     margin-top: 8px;
   }
 `
@@ -258,7 +277,7 @@ export const MarketingImg = styled.div`
   border: solid 4px #bbb;
   order: 2;
 
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     margin: 0 auto;
     width: 90%;
     padding-top: 90%;
@@ -271,7 +290,7 @@ export const HalfCardContainer = styled.div`
   justify-content: space-between;
   align-items: flex-start;
 
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     display: block;
     width: 100%;
   }
@@ -289,10 +308,17 @@ export const HalfCard = styled.div`
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
 
+  @media (max-width: 768px) {
+    width: 100%;
+    display: block;
+    padding: 32px;
+  }
+
   @media (max-width: 425px) {
     width: 100%;
     display: block;
     padding: 16px 8px;
+  }
 `
 
 export const FullCard = styled.div`
@@ -395,6 +421,10 @@ export const HalfCardItem = styled.li`
   display: flex;
   align-items: center;
   font-size: 18px;
+
+  @media (max-width: 425px) {
+    font-size: 16px;
+  }
 `
 export const FullCardItem = styled.li`
   margin-top: 32px;
@@ -420,7 +450,7 @@ export const SmallFullCardItem = styled.li`
 
 export const ListItemIcon = styled.img`
   height: 24px; width: auto;
-  margin-right: 15px;
+  margin-right: 8px;
 `
 
 export const BoldText = styled.span`
@@ -434,7 +464,7 @@ export const FormContainer = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     display: block;
   }
 `
@@ -442,7 +472,7 @@ export const FormContainer = styled.div`
 export const FormInfo = styled.div`
   width: 38%;
 
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     width: 100%;
     margin-bottom: 16px;
   }
@@ -462,7 +492,7 @@ export const ContactForm = styled.form`
   width: 58%;
   margin: 0; padding: 0;
 
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     width: 100%;
   }
 `
@@ -498,7 +528,7 @@ export const Input = styled.input`
     box-shadow: 0 0 5px #2ECC71;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     width: 100%;
   }
 `
@@ -521,7 +551,7 @@ export const Submit = styled.input`
   box-sizing:border-box;
   cursor: pointer;
 
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     width: 100%;
   }
 `
