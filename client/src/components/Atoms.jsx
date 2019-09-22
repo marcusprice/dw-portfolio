@@ -612,3 +612,46 @@ export const ShowFlier = styled.img`
     width: 100%;
   }
 `
+
+export const Modal = styled.div`
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  z-index: 1;
+  left: 0;
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+export const ModalCard = styled.div`
+  width: 500px;
+  border-radius: 5px;
+
+  margin: 0px;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 32px;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  border: solid #444 1px;
+
+  @media (max-width: 500px) {
+    width: 95%;
+    padding: 16px 8px;
+  }
+`
+
+export const ModalButton = styled.button`
+  background-color: #eee;
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-family: 'roboto';
+  margin-top: 16px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+`
