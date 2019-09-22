@@ -18,7 +18,7 @@ export const HeaderContainer = styled.header`
   top: 0px;
 
   @media (max-width: 425px) {
-    width: calc(100% - 20px)
+    width: calc(100% - 20px);
   }
 `
 export const SiteTitle = styled.h1`
@@ -29,7 +29,7 @@ export const SiteTitle = styled.h1`
   cursor: pointer;
   font-weight: 500;
 
-  @media (min-width: 800px) {
+  @media (min-width: 900px) {
     :hover {
       color: #888;
     }
@@ -116,6 +116,10 @@ export const LandingMenuList = styled.ul`
   row-gap: 16px;
 
   @media (max-width: 812px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (orientation: portrait) {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -536,18 +540,19 @@ export const Input = styled.input`
 export const Submit = styled.input`
   display: block;
   margin: 0; padding: 0;
-  background: #ccc;
-  color: #222;
+  background: #eee;
+  color: #333;
+  border-radius: 5px;
   font-family: 'roboto';
   font-weight: 500;
   margin-top: 32px;
   border-radius: 5px;
-  font-size: 16px;
-  width: 150px;
-  padding: 8px;
+  font-size: 20px;
+  padding: 15px 30px;
   border: solid #666 1px;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
+  -webkit-appearance: none;
   box-sizing:border-box;
   cursor: pointer;
 
