@@ -1,7 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FullCard, FormContainer, FormInfo, CardTitle, FormParagraph, ContactForm, FormLabel, Input, Submit, TextArea } from './Atoms.jsx'
 
 const AudioServicesContact = (props) => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [service, setService] = useState('')
+  const [message, setMessage] = useState('')
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    sendEmail({
+      name: name,
+      email: email,
+      subjectType: 'Services',
+      subject: service,
+      message: message
+    })
+  }
+
+  const sendEmail = (formValues) => {
+    fetch('/sendEmail', {
+        method: 'POST',
+        mode: 'cors',
+        cache: 'no-cache',
+        credentials: 'same-origin',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        redirect: 'follow',
+        referrer: 'client',
+        body: JSON.stringify(formValues)
+    })
+      .then(response => response.json())
+      .then((result) => {
+        console.log(result);
+      })
+  }
+
   return(
     <FullCard>
       <FormContainer>
@@ -13,15 +49,15 @@ const AudioServicesContact = (props) => {
           </FormParagraph>
         </FormInfo>
 
-        <ContactForm autocomplete="off">
+        <ContactForm onSubmit={handleSubmit} autocomplete="off">
           <FormLabel top={true}>Name</FormLabel>
-          <Input top={true} type="text" />
+          <Input value={name} onChange={(e) => {setName(e.target.value)}} top={true} type="text" />
           <FormLabel>Email</FormLabel>
-          <Input type="email" />
+          <Input value={email} onChange={(e) => {setEmail(e.target.value)}} type="email" />
           <FormLabel>Service</FormLabel>
-          <Input type="text" />
+          <Input value={service} onChange={(e) => {setService(e.target.value)}} type="text" />
           <FormLabel>Message</FormLabel>
-          <TextArea />
+          <TextArea value={message} onChange={(e) => {setMessage(e.target.value)}} />
           <Submit value="Send Message" type="submit"/>
         </ContactForm>
 

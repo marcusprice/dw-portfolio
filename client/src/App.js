@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './App.css'
-// import { AppContainer } from './components/Atoms.jsx'
 import AppContainer from 'react-div-100vh'
 import Header from './components/Header.jsx'
 import ContentArea from './components/ContentArea.jsx'
