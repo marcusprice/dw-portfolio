@@ -15,7 +15,7 @@ const ContactFormCard = (props) => {
     sendEmail({
       name: name,
       email: email,
-      subjectType: 'Contact',
+      subjectType: 'Subject',
       subject: subject,
       message: message
     })

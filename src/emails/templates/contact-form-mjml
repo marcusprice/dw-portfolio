@@ -1,45 +1,45 @@
 <mjml>
   <mj-head>
-  	<mj-font name="Raleway" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
+  	<mj-font name="Raleway, Helvetica" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
   </mj-head>
   <mj-body>
 
-    <mj-section full-width="full-width" background-color="#333">
+    <mj-section background-color="#333">
       <mj-column>
-        <mj-text font-family="Roboto" font-weight="700" color="#eee" font-size="32px">DUSTIN WILLIAMS</mj-text>
+        <mj-text font-family="Roboto, Helvetica" font-weight="700" color="#eee" font-size="32px">DUSTIN WILLIAMS</mj-text>
       </mj-column>
     </mj-section>
 
     <mj-section>
       <mj-column>
-        <mj-text font-weight="300" font-family="Roboto" font-size="20px">
+        <mj-text color="#111" font-weight="300" font-family="Roboto, Helvetica" font-size="16px">
         Dustin,
         </mj-text>
-         <mj-text font-weight="300" font-family="Roboto" font-size="20px">
-           Marcus Price has sent you a message from the 				tarsiereyes.com <span styles="font-weight:700">Audio Services</span> page:
+         <mj-text color="#111" font-weight="300" font-family="Roboto, Helvetica" font-size="16px">
+           FROM_NAME has sent you a message from the 				tarsiereyes.com PAGE_TYPE page:
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <mj-section background-color="#444" border-radius="5px">
+    <mj-section>
       <mj-column>
-                    <mj-text color="#eee" font-weight="300" font-family="Roboto" font-size="20px" padding-bottom="0px">
+                    <mj-text color="#111" font-weight="300" font-family="Roboto, Helvetica" font-size="16px" padding-bottom="0px">
 					From: FROM_NAME
         </mj-text>
-            <mj-text color="#eee" font-weight="300" font-family="Roboto" font-size="20px" padding-bottom="0px">
+            <mj-text color="#111" font-weight="300" font-family="Roboto, Helvetica" font-size="16px" padding-bottom="0px">
 					Email: EMAIL_ADDRESS
         </mj-text>
 
-        <mj-text color="#eee" font-weight="300" font-family="Roboto" font-size="20px" padding-bottom="0px">
+        <mj-text color="#111" font-weight="300" font-family="Roboto, Helvetica" font-size="16px" padding-bottom="0px">
 					SUBJECT_TYPE: SUBJECT
         </mj-text>
 
 
-        <mj-text color="#eee" font-weight="300" font-family="Roboto" font-size="20px" padding-bottom="0px">
+        <mj-text color="#111" font-weight="300" font-family="Roboto, Helvetica" font-size="16px" padding-bottom="0px">
 					Message:
         </mj-text>
 
-        <mj-text color="#eee" font-weight="300" font-family="Roboto" font-size="20px">
+        <mj-text color="#111" font-weight="300" font-family="Roboto, Helvetica" font-size="16px">
 
           MESSAGE
 
