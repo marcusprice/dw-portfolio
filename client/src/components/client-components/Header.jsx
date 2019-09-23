@@ -1,6 +1,6 @@
 import React from 'react'
 import { HeaderContainer, SiteTitle, MenuIcon } from './Atoms'
-import menuIcon from '../assets/icons/menu.png'
+import menuIcon from '../../assets/icons/menu.png'
 
 const Header = (props) => {
 

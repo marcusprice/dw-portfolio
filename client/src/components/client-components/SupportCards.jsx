@@ -1,7 +1,7 @@
 import React from 'react'
 import { FullCard, CardTitle, SupportingParagraph, SupportContainer, SupportItem } from './Atoms.jsx'
-import patreon from '../img/Patreon_White.png'
-import venmo from '../img/venmo_logo_blue.png'
+import patreon from '../../img/Patreon_White.png'
+import venmo from '../../img/venmo_logo_blue.png'
 
 
 const SupportCards = (props) => {

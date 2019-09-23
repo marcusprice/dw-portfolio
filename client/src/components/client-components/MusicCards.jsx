@@ -1,6 +1,6 @@
 import React from 'react'
 import { FullCard, CardTitle, CardSubTitle, MindBeams, TarsierEyes, Alien, Stalebirth, SupportingParagraph } from './Atoms.jsx'
-import alien from '../assets/icons/alien.png'
+import alien from '../../assets/icons/alien.png'
 
 const MusicCards = (props) => {
   return(

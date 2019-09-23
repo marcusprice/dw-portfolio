@@ -1,6 +1,6 @@
 import React from 'react'
 import { MarketingContainer, MarketingInfoContainer, MarketingTitle, MarketingQuote, Paragraph, MarketingImg } from './Atoms.jsx'
-import money from '../img/money.jpeg'
+import money from '../../img/money.jpeg'
 
 const SupportInfo = (props) => {
   return(

@@ -1,6 +1,6 @@
 import React from 'react'
 import { MarketingContainer, MarketingTitle , MarketingInfoContainer, MarketingQuote, Paragraph, MarketingImg } from './Atoms.jsx'
-import dustinJamming from '../img/dustin-jamming.jpg'
+import dustinJamming from '../../img/dustin-jamming.jpg'
 
 const ShowsInfo = (props) => {
   return(

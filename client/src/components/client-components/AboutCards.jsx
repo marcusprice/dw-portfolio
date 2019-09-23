@@ -1,6 +1,6 @@
 import React from 'react'
 import { FullCard, HalfCardContainer, HalfCard, CardTitle, CardSubTitle, Paragraph, SupportingParagraph, FullCardList, ListItemIcon, SmallFullCardItem } from './Atoms.jsx'
-import checkmark from '../assets/icons/checkmark.png'
+import checkmark from '../../assets/icons/checkmark.png'
 
 const AboutCards = (props) => {
   return(

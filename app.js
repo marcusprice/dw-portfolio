@@ -7,13 +7,13 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.json())
 app.use(express.static('public'))
 
+//api routes
+const routes = require('./routes')(app)
+
 //serves the app
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
   res.send(__dirname + '/public/index.html')
 })
-
-//routes
-const routes = require('./routes')(app)
 
 app.listen(port, () => {
   console.log('listening on port ' + port);

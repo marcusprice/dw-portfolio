@@ -1,11 +1,11 @@
 import React from 'react'
 import { LandingMenuList, LandingMenuItem } from './Atoms.jsx'
-import dustinJamming from '../img/dustin-jamming.jpg'
-import dustin from '../img/dustin.jpg'
-import audioEquipment from '../img/audio-equipment.jpeg'
-import musicCollection from '../img/music-collection.jpeg'
-import money from '../img/money.jpeg'
-import email from '../img/email.jpeg'
+import dustinJamming from '../../img/dustin-jamming.jpg'
+import dustin from '../../img/dustin.jpg'
+import audioEquipment from '../../img/audio-equipment.jpeg'
+import musicCollection from '../../img/music-collection.jpeg'
+import money from '../../img/money.jpeg'
+import email from '../../img/email.jpeg'
 
 const LandingMenu = (props) => {
   return(

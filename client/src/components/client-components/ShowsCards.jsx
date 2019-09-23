@@ -1,8 +1,8 @@
 import React from 'react'
 import { FullCard, CardTitle, CardSubTitle, ShowFlier, SupportingParagraph } from './Atoms.jsx'
-import showPoster1 from '../img/showposter1.jpg'
-import showPoster2 from '../img/showposter2.jpg'
-import showPoster3 from '../img/showposter3.jpg'
+import showPoster1 from '../../img/showposter1.jpg'
+import showPoster2 from '../../img/showposter2.jpg'
+import showPoster3 from '../../img/showposter3.jpg'
 
 const ShowsCards = (props) => {
   return(

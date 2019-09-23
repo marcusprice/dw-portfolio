@@ -1,6 +1,6 @@
 import React from 'react'
 import { MarketingContainer, MarketingInfoContainer, MarketingTitle, MarketingQuote, Paragraph, MarketingImg } from './Atoms.jsx'
-import musicCollection from '../img/music-collection.jpeg'
+import musicCollection from '../../img/music-collection.jpeg'
 
 const MusicSectionInfo = (props) => {
   return(

@@ -1,7 +1,7 @@
 import React from 'react'
 import { HalfCardContainer, HalfCard, CardTitle, ListItemIcon, HalfCardList, HalfCardItem, FullCardList, FullCardItem, BoldText } from './Atoms.jsx'
-import checkmark from '../assets/icons/checkmark.png'
-import speaker from '../assets/icons/speaker.png'
+import checkmark from '../../assets/icons/checkmark.png'
+import speaker from '../../assets/icons/speaker.png'
 
 const AudioServicesCards = (props) => {
   return(
