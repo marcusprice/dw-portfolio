@@ -13,6 +13,10 @@ module.exports = (app) => {
   })
 
   app.get('/loginCheck', (req, res) => {
-    res.json({loggedIn: false, shows: []})
+    if(req.session.loggedIn) {
+      res.json({loggedIn: true, shows: []})
+    } else {
+      res.json({loggedIn: false, shows: []})
+    }
   })
 }
