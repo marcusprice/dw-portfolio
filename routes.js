@@ -11,4 +11,8 @@ module.exports = (app) => {
       }
     });
   })
+
+  app.get('/loginCheck', (req, res) => {
+    res.json({loggedIn: false, shows: []})
+  })
 }
