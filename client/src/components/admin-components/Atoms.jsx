@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const LoginContainer = styled.div`
   width: 100%;
   height: 100%;
-  background-color: #F0F4F8;
+  background-color: #222;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,15 +12,13 @@ export const LoginContainer = styled.div`
 
 export const LoginCard = styled.div`
   border-radius: 10px;
-  border: solid #627D98 1px;
+  /* border: solid #666 1px; */
   width: 384px;
   padding: 32px;
   box-sizing: border-box;
   /* background-color: #F0F4F8; */
-  background-color: #334E68;
-  -moz-box-shadow:    2px 5px 5px #666;
-  -webkit-box-shadow: 2px 5px 5px #666;
-  box-shadow:         2px 5px 5px #666;
+  background-color: #333;
+  box-shadow: 0px 4px 6px #111;
 `
 
 export const LoginTitle = styled.h1`
@@ -50,26 +48,28 @@ export const LoginInput = styled.input`
   font-size: 18px;
   padding: 8px;
   border-radius: 5px;
-  border: solid 0px;
-  font-weight: 500;
+  border: solid #444 1px;
+  font-weight: 300;
   font-family: 'roboto';
-  color: #102A43;
-  background-color: #F0F4F8;
+  color: #eee;
+  background-color: #222;
 `
 
 export const RememberMe = styled.input`
+
 `
 
 export const LoginButton = styled.input`
   margin-top: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   display: block;
   height: 48px;
   width: 100%;
   border-radius: 5px;
   font-size: 20px;
   border: solid 0px;
-  background-color: #102A43;
+  background-color: #222;
+  border: solid #444 1px;
   color: #F0F4F8;
   font-family: 'roboto';
   cursor: pointer;
