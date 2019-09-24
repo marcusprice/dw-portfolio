@@ -12,7 +12,7 @@ app.use(session({
   secret: credentials.secretKey,
   resave: false,
   saveUninitialized: true,
-  cookie: { secure: true }
+  cookie: { secure: false }
 }))
 
 //api routes
