@@ -9,7 +9,7 @@ const credentials = require('./config/credentials')
 app.use(bodyParser.json())
 app.use(express.static('public'))
 app.use(session({
-  secret: credentials.secret,
+  secret: credentials.secretKey,
   resave: false,
   saveUninitialized: true,
   cookie: { secure: true }

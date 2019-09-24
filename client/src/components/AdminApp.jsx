@@ -42,22 +42,23 @@ const AdminApp = () => {
   const handleDisplay = () => {
     if(loggedIn) {
       return(
-        <Dashboard  triggerNavMenu={triggerNavMenu} navMenuExpanded={navMenuExpanded} display={display} changeDisplay={changeDisplay} />
+        <AppContainer>
+          <Header changeDisplay={changeDisplay} triggerNavMenu={triggerNavMenu} />
+          <NavBar changeDisplay={changeDisplay} navMenuExpanded={navMenuExpanded} />
+          <Dashboard triggerNavMenu={triggerNavMenu} navMenuExpanded={navMenuExpanded} display={display} changeDisplay={changeDisplay} />
+        </AppContainer>
       )
     } else {
       return(
-        <Login />
+        <AppContainer>
+          <Header  changeDisplay={changeDisplay} triggerNavMenu={triggerNavMenu} />
+          <Login />
+        </AppContainer>
       )
     }
   }
 
-  return(
-      <AppContainer>
-        <Header  changeDisplay={changeDisplay} triggerNavMenu={triggerNavMenu} />
-        <NavBar  changeDisplay={changeDisplay} navMenuExpanded={navMenuExpanded} />        
-        {handleDisplay()}
-      </AppContainer>
-  )
+  return handleDisplay()
 }
 
 export default AdminApp
