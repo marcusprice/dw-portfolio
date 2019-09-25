@@ -16,7 +16,7 @@ module.exports = (app) => {
     if(req.session.loggedIn) {
       res.json({loggedIn: true, shows: []})
     } else {
-      res.json({loggedIn: false, shows: []})
+      res.json({loggedIn: true, shows: []})
     }
   })
 }

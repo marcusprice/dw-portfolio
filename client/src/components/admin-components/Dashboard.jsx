@@ -2,9 +2,9 @@ import React from 'react'
 import { ContentAreaContainer, ContentSection, FullCard, CardTitle, MarketingContainer, MarketingInfoContainer, MarketingTitle, MarketingQuote, Paragraph, MarketingImg } from './Atoms.jsx'
 import admin from '../../img/admin.jpg'
 
-const Dashboard = () => {
+const Dashboard = (props) => {
   return(
-    <ContentAreaContainer>
+    <ContentAreaContainer onClick={() => {props.triggerNavMenu(false)}} navMenuExpanded={props.navMenuExpanded}>
       <ContentSection>
         <MarketingContainer>
           <MarketingInfoContainer>
@@ -14,7 +14,7 @@ const Dashboard = () => {
           <MarketingImg img={admin}/>
         </MarketingContainer>
         <FullCard>
-          <CardTitle>Shows</CardTitle>
+          <CardTitle>New Show</CardTitle>
         </FullCard>
       </ContentSection>
     </ContentAreaContainer>
