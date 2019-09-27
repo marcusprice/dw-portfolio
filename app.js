@@ -4,6 +4,7 @@ const port = process.env.PORT || 5000
 const bodyParser = require('body-parser')
 const session = require('express-session')
 const credentials = require('./config/credentials')
+const mongodb = require('./models/mongodb')
 
 //middleware
 app.use(bodyParser.json())
@@ -25,4 +26,11 @@ app.get('*', (req, res) => {
 
 app.listen(port, () => {
   console.log('listening on port ' + port);
+
+  //connect to db
+  mongodb.connect((err) => {
+    if(err) {
+      console.error(err)
+    }
+  })
 })
